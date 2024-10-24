@@ -1,0 +1,30 @@
+// for section or button loader
+.borobazar-loader {
+  width: 70px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+
+  &.is-active {
+    display: flex;
+  }
+
+  span {
+    display: inline-flex;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: var(--color-brand);
+    border-radius: 100%;
+    animation: anim-pulse 1s infinite ease-in-out both;
+
+    &.dot-2 {
+      animation-delay: 0.1s;
+    }
+
+    &.dot-3 {
+      animation-delay: 0.2s;
+    }
+  }
+}

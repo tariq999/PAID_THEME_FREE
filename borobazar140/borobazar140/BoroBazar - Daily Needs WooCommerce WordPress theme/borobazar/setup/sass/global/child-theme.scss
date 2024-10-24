@@ -1,0 +1,9 @@
+.redq-setup-wizard-child-theme {
+  button {
+    .loader {
+      &.show {
+        display: inline-block;
+      }
+    }
+  }
+}

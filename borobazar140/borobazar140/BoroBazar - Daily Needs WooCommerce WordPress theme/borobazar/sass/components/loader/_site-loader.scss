@@ -1,0 +1,51 @@
+.borobazar-site-loader {
+  z-index: 99999;
+
+  // svg loader
+  .circular {
+    animation: rotate 2s linear infinite;
+  }
+  
+  .path {
+    stroke-linecap: round;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 1, 200;
+    animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+  }
+  
+  @keyframes rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes dash {
+    0% {
+      stroke-dasharray: 1, 200;
+      stroke-dashoffset: 0;
+    }
+    50% {
+      stroke-dasharray: 89, 200;
+      stroke-dashoffset: -35px;
+    }
+    100% {
+      stroke-dasharray: 89, 200;
+      stroke-dashoffset: -124px;
+    }
+  }
+
+  @keyframes color {
+    100%, 0% {
+      stroke: var(--color-brand-hover);
+    }
+    40% {
+      stroke: var(--color-brand);
+    }
+    66% {
+      stroke: var(--color-brand-hover);
+    }
+    80%, 90% {
+      stroke: var(--color-brand);
+    }
+  }
+}

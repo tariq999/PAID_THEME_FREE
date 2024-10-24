@@ -1,0 +1,20 @@
+a,
+.wp-block-freeform.block-library-rich-text__tinymce a {
+  color: var(--color-main-text);
+  transition: color 0.2s ease;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--color-brand-hover);
+  }
+
+  &:focus {
+    outline: thin dotted;
+  }
+
+  &:hover,
+  &:active {
+    outline: 0;
+  }
+}

@@ -1,0 +1,131 @@
+p {
+  word-break: break-word;
+  margin-bottom: 1.6em;
+
+  @include from-sm {
+    margin-bottom: 2em;
+  } 
+
+  @include from-md {
+    margin-bottom: 2.4em;
+  }
+
+  @include from-lg {
+    margin-bottom: 2.6em;
+  }
+}
+
+b,
+strong {
+  color: var(--color-main-text);
+}
+
+dfn,
+cite,
+em,
+i {
+  font-style: italic;
+}
+
+blockquote {
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 2em;
+
+  @include from-md {
+    margin-bottom: 2.4em;
+  }
+
+  @include from-lg {
+    margin-bottom: 2.6em;
+  }
+}
+
+address,
+.woocommerce .woocommerce-customer-details address {
+  padding: 12px 20px;
+  font-style: normal;
+  border: 1px solid var(--color-border-main);
+  border-right-width: 2px;
+  border-bottom-width: 2px;
+  border-radius: $size__main-radius;
+  margin: 0 0 2em;
+
+  @include from-md {
+    margin: 0 0 2.4em;
+  }
+
+  @include from-lg {
+    margin: 0 0 2.6em;
+  }
+}
+
+pre {
+  color: var(--color-main-text);
+  font-family: $font__pre;
+  line-height: $font__line-height-pre;
+  max-width: 100%;
+  padding: 1em;
+  margin-bottom: 1.2em;
+  border: 1px solid var(--color-border-main);
+  background: var(--color-bg);
+  border-radius: $size__main-radius;
+  overflow: auto;
+
+  @include from-sm {
+    padding: 1.6em;
+  }
+
+  code {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+  }
+}
+
+code,
+kbd,
+tt,
+var,
+.wp-block-freeform.block-library-rich-text__tinymce code {
+  display: inline-block;
+  color: var(--color-main-text);
+  font-family: $font__code;
+  font-size: inherit;
+  margin: 4px 0;
+  padding: 2px 4px;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border-main);
+  border-radius: $size__main-radius;
+
+  @include from-sm {
+    margin: 5px 0;
+    padding: 3px 8px;
+  }
+}
+
+kbd {
+  border: 1px solid var(--color-border-main);
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.08);
+}
+
+abbr,
+acronym {
+  border-bottom: 1px dotted var(--color-border-main);
+  cursor: help;
+}
+
+mark,
+ins {
+  color: var(--color-main-text);
+  text-decoration: none;
+  padding: 3px 8px;
+  background: $color__background-ins;
+  border: 1px solid darken($color__background-ins, 28);
+  border-radius: $size__main-radius;
+}
+
+big {
+  font-size: 125%;
+}

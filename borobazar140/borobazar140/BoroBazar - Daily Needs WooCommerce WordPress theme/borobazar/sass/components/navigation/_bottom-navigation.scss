@@ -1,0 +1,130 @@
+// re-design header style when bottom nav is active
+.borobazar-bottom-nav-is-active {
+  .site-branding {
+    .borobazar-header-search-handler {
+      display: none;
+    }
+  }
+
+  &.borobazar-banner-search {
+    // initial style when page has banner search
+    &-visible {
+      .site-branding {
+        .borobazar-header-search-handler {
+          display: none; 
+  
+          @media (max-width: 1024px) {
+            display: flex;
+          }
+        }
+      }
+  
+      @media (max-width: 1024px) {
+        .site-branding {
+          .borobazar-mobile-back-navigator,
+          .borobazar-header-search-handler {
+            opacity: 0;
+            visibility: hidden;
+          }
+        }
+  
+        .site-header .borobazar-header-search-handler {
+          display: none; 
+        }
+      }    
+    }
+
+    // style when page has banner search but not in viewport
+    &-not-visible {
+      @media (max-width: 1024px) {
+        .site-branding {
+          .borobazar-mobile-back-navigator,
+          .borobazar-header-search-handler {
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .borobazar-bottom-navigation {
+    display: flex;
+    background-color: var(--color-bottom-nav-bg);
+
+    .borobazar-header-search-handler {
+      display: flex;
+    }
+
+    a,
+    button {
+      color: var(--color-bottom-nav-icon);
+    }
+  }
+
+  .borobazar-bottom-nav-is-active {
+    .site-header {
+      .site-branding {
+        width: 100%;
+        padding: 0;
+        align-items: center;
+        text-align: center;
+
+        .borobazar-mobile-back-navigator,
+        .borobazar-header-search-handler {
+          display: flex;
+        }
+      }
+
+      .borobazar-drawer-handler,
+      .borobazar-header-search-handler {
+        display: none;
+      }
+    }
+
+    .borobazar-drawer-header {
+      .site-branding {
+        width: auto;
+        padding-right: 10px;
+        align-items: flex-start;
+        text-align: left;
+
+        .borobazar-mobile-back-navigator,
+        .borobazar-header-search-handler {
+          display: none;
+        }
+      }
+    }
+
+    // home page style
+    &.home {
+      .site-header {
+        .site-branding {
+          align-items: flex-start;
+          text-align: left;
+        }
+      }
+    }
+
+    // global search disable style 
+    &.borobazar-global-search-disable {
+      .site-header {
+        .site-branding {
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+        }
+      }
+
+      .borobazar-drawer-header {
+        .site-branding {
+          align-items: flex-start;
+          justify-content: flex-start;
+          text-align: left;
+        }
+      }
+    }
+  }
+}

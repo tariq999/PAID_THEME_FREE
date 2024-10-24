@@ -1,0 +1,244 @@
+.widget {
+  margin: 0 0 2.8em;
+
+  @include from-sm {
+    margin: 0 0 3.5em;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .widget-title {
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    @include from-sm {
+      margin-bottom: 24px;
+    }
+  }
+
+  img {
+    border-radius: $size__main-radius;
+  }
+
+  a {
+    color: var(--color-main-text);
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+
+    &:hover,
+    &:focus {
+      color: var(--color-brand);
+    }
+  }
+
+  ul,
+  ol {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+
+    li>ul {
+      padding-left: 16px;
+
+      @include from-sm {
+        padding-left: 24px;
+      }
+    }
+  }
+
+  li {
+    margin-bottom: 16px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  // list type widget style 
+  &.widget_archive,
+  &.widget_categories,
+  &.widget_pages,
+  &.widget_nav_menu {
+    li {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      margin-bottom: 0;
+
+      ul {
+        grid-column: 1 / span 2;
+
+        a {
+          display: inline-flex;
+          align-items: center;
+          flex: 1;
+
+          &::before {
+            content: '';
+            display: inline-block;
+            width: 12px;
+            height: 2px;
+            margin-right: 12px;
+            background-color: var(--color-border-light);
+          }
+        }
+      }
+    }
+
+    a {
+      margin-bottom: 16px;
+    }
+
+    >ul>li:last-child>a,
+    div>ul>li:last-child>a {
+      margin-bottom: 0;
+    }
+  }
+
+  // style for rss
+  &.widget_rss {
+    li {
+      display: grid;
+      margin-bottom: 20px;
+
+      @include from-sm {
+        margin-bottom: 24px;
+      }
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+
+      .rsswidget {
+        font-size: calc(var(--h6-font-size) - 1px);
+        font-family: var(--h6-font-family);
+        font-weight: 600;
+        margin-bottom: 5px;
+
+        @include from-sm {
+          font-size: var(--h6-font-size);
+          margin-bottom: 6px;
+        }
+      }
+
+      .rss-date,
+      .rssSummary {
+        margin-bottom: 10px;
+
+        @include from-sm {
+          margin-bottom: 12px;
+        }
+      }
+
+      .rss-date,
+      cite {
+        color: var(--color-lighter-text);
+        font-size: calc(var(--body-font-size) - 2px);
+
+        @include from-md {
+          font-size: calc(var(--body-font-size) - 1px);
+        }
+      }
+    }
+  }
+
+  // style for tag cloud
+  &.widget_tag_cloud,
+  &.widget_product_tag_cloud {
+    .tagcloud {
+      margin-right: -2px;
+      margin-bottom: -6px;
+    }
+
+    .tag-cloud-link {
+      @extend %tag-cloud-link-style;
+    }
+  }
+
+  // style for text widget
+  &.widget_text {
+    strong {
+      display: inline-block;
+      color: var(--h6-color);
+      font-size: calc(var(--h6-font-size) - 1px);
+      font-family: var(--h6-font-family);
+      font-weight: 600;
+      margin: 16px 0 8px;
+
+      @include from-sm {
+        font-size: calc(var(--h6-font-size) - 1px);
+      }
+    }
+
+    .wp-caption {
+      p:empty {
+        display: none;
+      }
+    }
+
+    .textwidget {
+
+      >p,
+      >div {
+        margin-top: 0;
+        margin-bottom: 20px;
+
+        @include from-sm {
+          margin-bottom: 24px;
+        }
+
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+
+      >p {
+        &:first-of-type {
+          strong {
+            margin-top: 0;
+          }
+
+          img+br+strong {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+
+  // style for calender widget
+  .calendar_wrap {
+    @extend %calendar-table-style;
+
+    a {
+      text-decoration: underline;
+    }
+  }
+
+  // style for gallery widgets
+  div[class*='gallery-columns-'] {
+    gap: 1rem;
+  }
+
+  .gallery-item {
+    margin: 0;
+
+    a {
+      display: flex;
+      align-items: center;
+      opacity: 1;
+      transition: opacity 0.2s ease;
+
+      &:hover,
+      &:focus {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  // Make sure select elements fit in widgets.
+  select {
+    width: 100%;
+  }
+}

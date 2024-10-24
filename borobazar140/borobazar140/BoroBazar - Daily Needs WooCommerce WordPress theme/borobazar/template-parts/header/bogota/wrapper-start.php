@@ -1,0 +1,2 @@
+<div class="inner-sticky absolute w-full min-h-[70px] md:min-h-20 z-20 transition duration-200 ease-in-out flex items-center backdrop-blur">
+    <div class="w-full max-w-120 mx-auto px-4 sm:px-5 lg:px-8 2xl:px-10 flex">

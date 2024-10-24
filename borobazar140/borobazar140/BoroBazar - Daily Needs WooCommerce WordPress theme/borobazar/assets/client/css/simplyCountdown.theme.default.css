@@ -1,0 +1,46 @@
+.borobazar-store-notice {
+  position: relative;
+}
+
+#borobazar-countdown {
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+}
+.simply-section:not(:last-of-type) {
+  margin-right: 15px;
+}
+
+.simply-amount {
+  background-color: #fff;
+  margin-right: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #02b290;
+  padding: 5px 10px;
+  border-radius: 2px;
+}
+
+@media only screen and (max-width: 904px) {
+  #borobazar-countdown {
+    margin-top: 1.5rem;
+    margin-left: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .borobazar-store-notice-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .borobazar-store-notice-content {
+    padding-right: 0;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .borobazar-store-notice-content {
+    padding-top: 14px;
+  }
+}

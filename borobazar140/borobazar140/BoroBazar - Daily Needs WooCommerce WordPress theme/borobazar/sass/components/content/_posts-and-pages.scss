@@ -1,0 +1,131 @@
+/* Page banner
+--------------------------------------------- */
+@import 'page_banner';
+
+/* Blog posts
+--------------------------------------------- */
+@import 'blog-posts';
+
+/* Search posts
+--------------------------------------------- */
+@import 'search-posts';
+
+/* Post single
+--------------------------------------------- */
+@import 'post-single';
+
+/*----------------------------------------------
+# Common styles for posts & pages
+----------------------------------------------*/
+.sticky {
+  display: block;
+
+  &.post {
+    padding: 16px 20px 26px;
+    border-radius: $size__main-radius;
+    border: 1px solid var(--color-border-main);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.06);
+
+    @include from-sm {
+      padding: 21px 24px 30px;
+    }
+  }
+}
+
+.tags,
+.categories {
+  a {
+    &::after {
+      content: ',';
+    }
+
+    &:last-child {
+      &::after {
+        content: none;
+      }
+    }
+  }
+}
+
+.updated:not(.published) {
+  display: none;
+}
+
+.page-content,
+.entry-content {
+  p {
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:only-child {
+      margin: 0;
+    }
+  }
+
+  // gutenberg common elements that are also render in the frontend
+  @import '../../base/elements/gutenberg-elements';
+
+  // block cover issue fix
+  .wp-block-cover {
+    &.has-left-content {
+      justify-content: flex-start;
+    }
+
+    &.has-right-content {
+      justify-content: flex-end;
+    }
+  }
+
+  .wp-block-cover-image .wp-block-cover-image-text,
+  .wp-block-cover .wp-block-cover-text,
+  section.wp-block-cover-image>h2 {
+    font-size: var(--h2-font-size);
+    line-height: 1.8;
+  }
+}
+
+.page-links {
+  clear: both;
+  margin: 0 0 2em;
+
+  @include from-md {
+    margin: 0 0 2.4em;
+  }
+
+  @include from-lg {
+    margin: 0 0 2.6em;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .post-page-numbers {
+    font-weight: 500;
+    padding: 8px 14px;
+    margin-left: 2px;
+    border-radius: $size__main-radius;
+    background-color: var(--color-bg);
+    transition: background-color 0.2s ease-out;
+
+    &:hover,
+    &:focus,
+    &.current {
+      color: #ffffff;
+      background-color: var(--color-brand);
+    }
+  }
+}
+
+// edit page link style
+.admin-bar {
+
+  &.page,
+  &.single {
+    .entry-footer {
+      clear: both;
+      margin: 2.6em 0;
+    }
+  }
+}

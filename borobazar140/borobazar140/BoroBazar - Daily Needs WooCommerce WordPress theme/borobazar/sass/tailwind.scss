@@ -1,0 +1,22 @@
+@import 'tailwind-custom-base.scss';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+//custom responsive utilities 🛠️
+@layer utilities {
+  .-ml-50vw {
+    margin-left: -50vw;
+  }
+
+  .text-selection-none {
+    &::selection {
+      color: currentColor;
+      background-color: transparent;
+    }
+  }
+
+  //⚠️ .sticky class create conflict between tailwind and wp sticky post, so use .position-sticky instead
+  .position-sticky {
+    position: sticky;
+  }
+}

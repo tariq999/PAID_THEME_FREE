@@ -1,0 +1,132 @@
+.borobazar-header-topbar {
+  background-color: var(--topbar-bg);
+  .borobazar-join-us-btn{
+    color: var(--topbar-content );
+    span{
+      color: var(--topbar-content);
+    }
+  }
+  .borobazar-mini-cart-fragment{
+    color: var(--topbar-content);
+    span{
+      color: var(--topbar-content);
+      span{
+        color: var(--topbar-counter);
+        background-color: var(--topbar-counter-bg);
+      }
+    }
+  }
+  &-search {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.2s ease;
+
+    .borobazar-global-search-container {
+      .borobazar-global-search-overlay {
+        visibility: hidden;
+        z-index: 11;
+      }
+
+      &.is-searching {
+        .borobazar-header-search-field {
+          z-index: 12;
+        }
+
+        .borobazar-global-search-overlay {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+
+    .borobazar-header-search-handler {
+      display: none;
+    }
+
+    .borobazar-header-search {
+      display: block;
+    }
+
+    .borobazar-header-search-field {
+      opacity: 1;
+      transform: scale(1);
+      .borobazar-global-search-input{
+        &::placeholder{
+          color: var(--topbar-search );
+        }
+        color: var(--topbar-search);
+        
+      }
+    }
+
+    .borobazar-global-search-results {
+      z-index: 100;
+    }
+  }
+}
+
+
+.borobazar-on-scroll {
+  .borobazar-header-topbar {
+    &-search {
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.2s ease;
+    }
+  }
+}
+
+.header-berlin {
+  .site-description {
+    display: none;
+  }
+
+  @include from-xl {
+    .site-branding {
+      width: 0;
+      margin-right: 0;
+    }
+
+    .site-branding,
+    .borobazar-join-us-btn,
+    .borobazar-header-search-handler,
+    .borobazar-mini-cart-drawer .borobazar-drawer-handler {
+      opacity: 0;
+      visibility: hidden;
+      transform: translate3d(0, -20px, 0);
+      transition: all 0.25s ease;
+    }
+
+    .borobazar-main-navigation {
+      transition: all 0.25s ease;
+    }
+
+    &.header-on-float {
+      .site-branding {
+        width: auto;
+        margin-right: 2.5rem;
+      }
+
+      .site-branding,
+      .borobazar-join-us-btn,
+      .borobazar-header-search-handler,
+      .borobazar-mini-cart-drawer .borobazar-drawer-handler {
+        opacity: 1;
+        visibility: visible;
+        transform: translateZ(0);
+        transition: all 0.25s ease;
+      }
+    }
+
+    &:not(.header-on-float) {
+      .borobazar-main-navigation {
+        display: flex;
+      }
+
+      .borobazar-header-search.search-is-open {
+        display: none;
+      }
+    }
+  }
+}
+

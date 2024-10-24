@@ -1,0 +1,56 @@
+.header-bogota {
+  .inner-sticky {
+    &::after,
+    &::before {
+      opacity: 0;
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 0;
+      width: 100%;
+      background-color: #ffffff;
+      transition: opacity 0.25s ease;
+      z-index: -1;
+    }
+
+    &::before {
+      opacity: 1;
+      height: calc(100% + 40px);
+      background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    }
+  }
+
+  &.header-on-float {
+    .inner-sticky {
+      align-items: normal;
+      
+      &::after {
+        opacity: 1;
+        height: 100%;
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.08);
+        transition: opacity 0.25s ease;
+      }
+
+      &::before {
+        content: none;
+      }
+    }
+  }
+
+  &+.borobazar-page-banner {
+    padding-top: 120px;
+
+    @include from-md {
+      padding-top: 150px;
+    }
+  }
+
+  &+.site-wrapper {
+    margin-top: 70px;
+
+    @include from-md {
+      margin-top: 80px;
+    }
+  }
+}

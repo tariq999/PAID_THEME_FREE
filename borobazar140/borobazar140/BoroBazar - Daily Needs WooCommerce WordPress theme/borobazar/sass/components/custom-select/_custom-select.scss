@@ -1,0 +1,11 @@
+.borobazar-custom-select {
+  @apply relative;
+
+  &.active {
+    .borobazar-custom-select-box {
+      @apply opacity-100;
+      @apply visible;
+      @apply translate-y-1.5;
+    }
+  }
+}

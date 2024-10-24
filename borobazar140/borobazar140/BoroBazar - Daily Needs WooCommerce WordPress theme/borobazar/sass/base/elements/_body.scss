@@ -1,0 +1,8 @@
+::selection {
+  color: #ffffff;
+  background-color: var(--color-brand);
+}
+
+body {
+  background: #ffffff; // Fallback for when there is no custom background color defined.
+}

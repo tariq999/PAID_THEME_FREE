@@ -1,0 +1,85 @@
+table,
+.wp-block-table table,
+.woocommerce table.shop_table,
+.woocommerce table.shop_attributes {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: inherit;
+  border-radius: $size__main-radius;
+  border: 1px solid var(--color-border-main);
+  table-layout: fixed;
+  overflow: hidden;
+  text-align: left;
+  margin: 0 0 2em;
+
+  @include from-md {
+    margin: 0 0 2.4em;
+  }
+
+  @include from-lg {
+    margin: 0 0 2.6em;
+  }
+
+  th {
+    color: var(--color-main-text);
+    font-weight: 600;
+    font-family: var(--h6-font-family);
+    font-size: calc(var(--h6-font-size) - 2px);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    background-color: var(--color-bg);
+
+    &:first-of-type {
+      border-top-left-radius: 6px;
+    }
+
+    &:last-of-type {
+      border-top-right-radius: 6px;
+    }
+  }
+
+  th,
+  td {
+    border: 0;
+    padding: 12px 16px;
+
+    @include from-sm {
+      padding: 16px 20px;
+    }
+  }
+
+  tbody {
+
+    th,
+    td {
+      border-bottom: 1px solid var(--color-border-main);
+    }
+
+    tr {
+      &:last-of-type {
+
+        th,
+        td {
+          border-bottom: 0;
+        }
+      }
+    }
+  }
+
+  thead+tbody {
+    th {
+      font-weight: normal;
+      text-transform: inherit;
+      font-family: var(--body-font-family);
+      font-size: var(--body-font-size);
+      letter-spacing: normal;
+    }
+  }
+
+  thead+tbody,
+  tfoot {
+    th {
+      background-color: transparent;
+    }
+  }
+}

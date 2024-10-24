@@ -1,0 +1,1 @@
+<div class="min-h-[70px] md:min-h-20 max-w-120 mx-auto px-4 sm:px-5 lg:px-8 2xl:px-10 flex">

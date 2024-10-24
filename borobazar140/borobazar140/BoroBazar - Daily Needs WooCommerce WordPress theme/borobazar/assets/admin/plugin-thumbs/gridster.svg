@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 130 130">
+  <g id="Plugin_icon" data-name="gridster" transform="translate(9255 4948)">
+    <rect id="Rectangle_2332" data-name="Rectangle 2332" width="130" height="130" rx="16" transform="translate(-9255 -4948)" fill="#fff" opacity="0.95"/>
+    <g id="_001-visualization" data-name="001-visualization" transform="translate(-9217 -4910)">
+      <g id="Group_13996" data-name="Group 13996">
+        <g id="Group_13995" data-name="Group 13995">
+          <path id="Path_18151" data-name="Path 18151" d="M20.149,0H4.694A4.7,4.7,0,0,0,0,4.694V20.149a4.7,4.7,0,0,0,4.694,4.694H20.149a4.7,4.7,0,0,0,4.694-4.694V4.694A4.7,4.7,0,0,0,20.149,0Z" fill="#004757"/>
+          <path id="Path_18152" data-name="Path 18152" d="M300.814,0H285.359a4.7,4.7,0,0,0-4.694,4.694V20.149a4.7,4.7,0,0,0,4.694,4.694h15.455a4.7,4.7,0,0,0,4.694-4.694V4.694A4.7,4.7,0,0,0,300.814,0Z" transform="translate(-251.507)" fill="#004757"/>
+          <path id="Path_18153" data-name="Path 18153" d="M20.149,280.665H4.694A4.7,4.7,0,0,0,0,285.359v15.455a4.7,4.7,0,0,0,4.694,4.694H20.149a4.7,4.7,0,0,0,4.694-4.694V285.359A4.7,4.7,0,0,0,20.149,280.665Z" transform="translate(0 -251.507)" fill="#004757"/>
+          <path id="Path_18154" data-name="Path 18154" d="M300.814,280.665H285.359a4.7,4.7,0,0,0-4.694,4.694v15.455a4.7,4.7,0,0,0,4.694,4.694h15.455a4.7,4.7,0,0,0,4.694-4.694V285.359A4.7,4.7,0,0,0,300.814,280.665Z" transform="translate(-251.507 -251.507)" fill="#004757"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

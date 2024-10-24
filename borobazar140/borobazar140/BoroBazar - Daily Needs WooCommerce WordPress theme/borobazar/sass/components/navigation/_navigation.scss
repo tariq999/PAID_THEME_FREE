@@ -1,0 +1,163 @@
+/* Main navigation
+--------------------------------------------- */
+@import 'main-navigation';
+
+/* Drawer Navigation
+--------------------------------------------- */
+@import 'drawer-navigation';
+
+/* Posts Navigation
+--------------------------------------------- */
+@import 'posts-navigation';
+
+/* Berlin Navigation
+--------------------------------------------- */
+@import 'berlin-navigation';
+
+/* Bogota Navigation
+--------------------------------------------- */
+@import 'bogota-navigation';
+
+/* Denver Navigation
+--------------------------------------------- */
+@import 'denver-navigation';
+
+/* Bottom Navigation
+--------------------------------------------- */
+@import 'bottom-navigation';
+
+/*--------------------------------------------------------------
+# header style when banner search visible
+--------------------------------------------------------------*/
+.borobazar-banner-search {
+  &-visible {
+    .borobazar-header-topbar .borobazar-header-search,
+    .site-header .borobazar-header-search-handler {
+      display: none;
+    }
+
+    @include from-lg {
+      .borobazar-header-search-handler,
+      .borobazar-mini-cart-on-desktop {
+        margin-left: auto;
+      }
+
+      // for denver header
+      .header-denver {
+        .borobazar-header-search {
+          display: none;
+        }
+      }
+    }
+  }
+
+  // that means header search & handler open
+  &-not-visible {
+    .borobazar-header-topbar {
+      .borobazar-header-search-handler {
+        display: none;
+      }
+    }
+
+    .borobazar-header-topbar .borobazar-header-search,
+    .site-header .borobazar-header-search-handler {
+      display: flex;
+    }
+
+    // when header is open
+    &.header-search-is-open {
+      .borobazar-header-search-handler {
+        display: none;
+      }
+    }
+
+    @include from-lg {
+      .borobazar-header-search-handler,
+      .borobazar-mini-cart-on-desktop {
+        margin-left: initial;
+      }
+
+      // for denver header
+      .header-denver {
+        .borobazar-header-search {
+          display: flex;
+        }
+      }
+    }
+  }
+
+  // back to initial state
+  &-is-visible {
+    .borobazar-header-topbar {
+      .borobazar-header-search-handler {
+        display: none;
+      }
+    }
+
+    // when header is open
+    &.header-search-is-open {
+      .borobazar-header-search {
+        display: none;
+      }
+
+      .borobazar-main-navigation {
+        display: flex;
+      }
+    }
+  }
+}
+
+
+/*--------------------------------------------------------------
+# styles for logged-in mode
+--------------------------------------------------------------*/
+.admin-bar {
+  .site-header {
+    &.sticky {
+
+      @media (max-width: 782px) {
+        top: 46px;
+        transition: top 0.6s ease-out;
+      }
+
+      @media (max-width: 600px) {
+        &.header-on-float {
+          top: 0;
+          transition: top 0.6s ease-out;
+        }
+      }
+    }
+  }
+
+  // fixed elements position control 
+  .borobazar-drawer-content,
+  .redq-quick-view-modal-blocker {
+    top: 32px;
+    height: calc(100% - 32px);
+
+    @media (max-width: 782px) {
+      top: 46px;
+      height: calc(100% - 46px);
+    }
+  }
+
+  @include from-sm {
+    .redq-quick-view-modal-blocker {
+      .modal {
+        margin-top: 10px;
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    &.borobazar-on-scroll {
+
+      .pswp,
+      .borobazar-drawer-content,
+      .redq-quick-view-modal-blocker {
+        top: 0;
+        height: 100%;
+      }
+    }
+  }
+}

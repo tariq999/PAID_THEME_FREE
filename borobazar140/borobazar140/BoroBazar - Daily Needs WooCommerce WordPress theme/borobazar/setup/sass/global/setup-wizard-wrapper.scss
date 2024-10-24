@@ -1,0 +1,27 @@
+.redq-setup-wizard-wrapper {
+  position: relative;
+  &::after {
+    content: "";
+    width: 1px;
+    height: 100%;
+    border-right: 1px dashed #e6e6e6;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    display: none;
+    @include from-md {
+      left: 34%;
+      display: block;
+    }
+    @include from-lg {
+      left: 33%;
+    }
+    @include from-xl {
+      left: 25%;
+    }
+    @include from-4xl {
+      left: 17%;
+    }
+  }
+}

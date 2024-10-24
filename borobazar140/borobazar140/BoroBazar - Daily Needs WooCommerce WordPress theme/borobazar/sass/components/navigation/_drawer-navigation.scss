@@ -1,0 +1,132 @@
+.borobazar-drawer {
+  &-menu {
+    a {
+      display: flex;
+      align-items: center;
+      padding: 12px 16px;
+      text-decoration: none;
+      color: var(--color-main-text);
+      line-height: 1.6;
+      transition: color 0.3s ease;
+      
+      @include from-sm {
+        padding: 16px;
+      }
+    }
+
+    .current_page_item>a,
+    .current-menu-item>a,
+    .current_page_ancestor>a,
+    .current-menu-ancestor>a {
+      color: var(--color-brand-hover);
+      text-shadow: 0 0 rgba(0, 0, 0, 0.4);
+    }
+
+    .current_page_item>a,
+    .current-menu-item>a {
+      background-color: #ffffff;
+    }
+
+    // dropdown styles
+    ul {
+      display: none;
+      list-style: none;
+      margin-left: 0;
+      padding-left: 0;
+
+      a {
+        color: var(--color-dark-text);
+        padding-left: 24px;
+        transition: color 0.2s ease-in-out;
+
+        &:hover,
+        &:focus {
+          color: var(--color-main-text);
+        }
+
+        &::before {
+          content: '';
+          display: inline-block;
+          width: 12px;
+          height: 2px;
+          margin-right: 12px;
+          background-color: var(--color-border-light);
+        }
+      }
+
+      li>ul {
+        padding-left: 24px;
+      }
+    }
+
+    li {
+      position: relative;
+
+      &:hover>ul,
+      &:focus>ul,
+      &.focus>ul {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+
+    .menu-drop-down-selector {
+      color: var(--color-lightest-text);
+      width: 42px;
+      height: 42px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      cursor: pointer;
+      top: 3px;
+      right: 0;
+      transition: color 0.2s ease-in-out;
+
+      @include from-sm {
+        top: 7px;
+      }
+
+      &:hover,
+      &:focus {
+        color: var(--color-main-text);
+      }
+
+      svg {
+        transform: rotate(-90deg);
+        transition: transform 0.2s ease-in-out;
+      }
+
+      &.children-active {
+        svg {
+          transform: rotate(0deg);
+          transition: transform 0.2s ease-in-out;
+        }
+      }
+    }
+  }
+}
+
+.borobazar-drawer-navigation {
+  &.drawer-open {
+    .borobazar-drawer-content {
+      box-shadow: 2px 0 8px rgba(0, 0, 0, 0.15);
+
+      @include from-sm {
+        box-shadow: 0px 25px 40px rgba(41, 50, 68, 0.25);
+      }
+    }
+  }
+
+  .borobazar-drawer-header {
+    .site-branding {
+      margin-top: 0.67rem;
+      margin-bottom: 0.67rem;
+
+      @include from-sm {
+        margin-top: 0.88rem;
+        margin-bottom: 0.88rem;
+      }
+    }
+  }
+}

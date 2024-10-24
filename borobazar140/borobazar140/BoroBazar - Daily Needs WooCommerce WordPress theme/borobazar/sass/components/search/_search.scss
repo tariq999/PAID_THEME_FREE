@@ -1,0 +1,41 @@
+.borobazar-header-search {
+  input[type="text"] {
+    padding-left: 3rem;
+    padding-right: 3rem;
+
+    @include from-md {
+      min-height: 52px;
+    }
+  }
+
+  .borobazar-header-search-field {
+    .borobazar-header-search-clear {
+      display: none;
+    }
+  }
+
+  &.has-value {
+    .borobazar-header-search-field {
+      .borobazar-header-search-clear {
+        display: flex;
+      }
+    }
+  }
+
+  .borobazar-more-result {
+    box-shadow: -3px 0 8px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.borobazar-product-search-card-price {
+  del {
+    color: var(--color-lightest-text);
+    font-size: 13px;
+  }
+
+  ins {
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+  }
+}

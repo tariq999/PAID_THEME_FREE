@@ -1,0 +1,54 @@
+/* tailwind transform-x manual RTL */
+.-translate-x-1\/2 {
+  --tw-translate-x: 50%;
+  -webkit-transform: var(--tw-transform);
+  -ms-transform: var(--tw-transform);
+  transform: var(--tw-transform);
+}
+.-translate-x-full {
+  --tw-translate-x: 100%;
+  -webkit-transform: var(--tw-transform);
+  -ms-transform: var(--tw-transform);
+  transform: var(--tw-transform);
+}
+.translate-x-full {
+  --tw-translate-x: -100%;
+  -webkit-transform: var(--tw-transform);
+  -ms-transform: var(--tw-transform);
+  transform: var(--tw-transform);
+}
+.group:hover .group-hover\:translate-x-1\.5 {
+  --tw-translate-x: -0.375rem;
+  -webkit-transform: var(--tw-transform);
+  -ms-transform: var(--tw-transform);
+  transform: var(--tw-transform);
+}
+.group:hover .group-hover\:translate-x-1 {
+  --tw-translate-x: -0.25rem;
+  -webkit-transform: var(--tw-transform);
+  -ms-transform: var(--tw-transform);
+  transform: var(--tw-transform);
+}
+@media (min-width: 1024px) {
+  .lg\:translate-x-0 {
+    --tw-translate-x: 0px;
+    -webkit-transform: var(--tw-transform);
+    -ms-transform: var(--tw-transform);
+    transform: var(--tw-transform);
+  }
+}
+
+/* rtl fixing for quick preview */
+.modal a.close-modal {
+  text-indent: 9999px;
+  right: auto;
+}
+
+.redq-quick-view-modal-blocker
+  div.product
+  div.woocommerce-product-gallery
+  .woocommerce-product-gallery__trigger {
+  text-indent: 9999px;
+}
+
+/* Language: css */

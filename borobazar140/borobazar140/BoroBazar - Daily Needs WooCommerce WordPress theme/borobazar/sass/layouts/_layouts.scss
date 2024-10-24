@@ -1,0 +1,26 @@
+// write layout sass
+.borobazar-footer-area {
+  .borobazar-site-footer-content {
+    .wp-block-columns {
+      @media (max-width: 1024px) {
+        display: grid;
+        gap: 40px;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        
+        &:not(.is-not-stacked-on-mobile)>.wp-block-column:not(:first-child) {
+          margin-left: 0;
+        }
+      }
+
+      @media (max-width: 768px) {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      @media (max-width: 600px) {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        gap: 32px;
+        margin-bottom: 0;
+      }
+    }
+  }
+}

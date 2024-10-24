@@ -1,0 +1,86 @@
+// calendar table 
+%calendar-table-style {
+  border: 1px solid var(--color-border-main);
+  border-radius: $size__main-radius;
+
+  table {
+    border: 0;
+    box-shadow: none;
+    text-align: center;
+    margin-bottom: 0;
+
+    >caption {
+      font-weight: 500;
+      padding: 12px 20px;
+    }
+
+    th {
+      &:first-of-type {
+        border-top-left-radius: 0;
+      }
+
+      &:last-of-type {
+        border-top-right-radius: 0;
+      }
+    }
+
+    th,
+    td {
+      padding: 10px 20px;
+    }
+
+    tbody {
+
+      th,
+      td {
+        border-bottom: 0;
+      }
+
+      #today {
+        color: var(--color-main-text);
+        font-weight: 600;
+      }
+
+      a {
+        color: var(--color-brand);
+        font-weight: 600;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .wp-calendar-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 20px 16px;
+    font-size: calc(var(--body-font-size) - 2px);
+
+    @include from-md {
+      font-size: calc(var(--body-font-size) - 1px);
+    }
+  }
+}
+
+// tag cloud link
+%tag-cloud-link-style {
+  display: inline-block;
+  font-size: calc(var(--body-font-size) - 1px) !important;
+  text-transform: capitalize;
+  padding: 6px 12px;
+  margin-right: 2px;
+  margin-bottom: 6px;
+  border-radius: $size__main-radius;
+  border: 1px solid var(--color-border-main);
+  transition: background-color 0.2s ease-in-out;
+
+  @include from-md {
+    font-size: var(--body-font-size) !important;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--color-main-text);
+    background-color: var(--color-bg);
+  }
+}

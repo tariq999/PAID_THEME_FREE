@@ -1,0 +1,1093 @@
+/* fix tailwind conflict css with wp admin */
+table.fixed,
+table.wp-list-table .fixed {
+  position: inherit;
+  table-layout: auto;
+}
+/* end tailwind conflict css */
+
+.borobazar-theme-setup-main-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-top: 60px;
+  padding-bottom: 32px;
+  padding-left: 15px;
+  padding-right: 20px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: var(--body-font-family);
+}
+
+@media screen and (max-width: 767px) {
+  .borobazar-theme-setup-main-wrapper {
+    padding: 24px;
+  }
+}
+
+.borobazar-theme-setup-main-wrapper * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+.borobazar-theme-setup-content-wrapper,
+.ocdi__theme-about {
+  background-color: #ffffff;
+  /* border-radius: 6px 6px 0 0; */
+  border: 1px solid var(--color-border-main);
+  padding: 30px 60px 60px 60px;
+}
+
+.ocdi__theme-about {
+  padding-top: 60px;
+}
+
+@media screen and (max-width: 1600px) {
+  .borobazar-theme-setup-content-wrapper {
+    padding: 40px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .borobazar-theme-setup-content-wrapper {
+    padding: 30px;
+  }
+}
+
+.borobazar-getting-started-description-wrapper hr{
+  /* margin-bottom: 0; */
+  display: none;
+}
+
+.borobazar-theme-setup-content-wrapper h1,
+.borobazar-theme-setup-content-wrapper .borobazar-theme-setup-content-title {
+  font-family: var(--h1-font-family);
+  font-size: 28px;
+  font-weight: 500;
+  color: var(--h1-color, --color-main-text);
+  margin-bottom: 18px;
+  margin-top: 0;
+  display: block;
+  line-height: 1.2;
+}
+
+.borobazar-theme-setup-content-wrapper h3 {
+  font-size: 21px;
+  font-weight: 600;
+  color: var(--h3-color, --color-main-text);
+  font-family: var(--h3-font-family);
+  margin-bottom: 15px;
+  margin-top: 0;
+  display: block;
+  line-height: 1.2;
+}
+
+.borobazar-theme-setup-content-wrapper p {
+  font-size: 15px;
+  font-weight: normal;
+  color: var(--color-dark-text);
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* Logo Wrapper */
+.borobazar-getting-started-logo-wrapper,
+.borobazar-getting-started-description-wrapper,
+.borobazar-theme-setup-basic-wrapper,
+.borobazar-required-plugins-list,
+.borobazar-recommended-plugins-list {
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+
+.borobazar-getting-started-description-wrapper {
+  margin-bottom: 64px;
+}
+
+/* Welcome video */
+.borobazar-theme-setup-content-wrapper .borobazar-welcome-tour-video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.borobazar-getting-started-column-wrapper {
+  display: grid;
+  gap: 24px;
+  margin-top: 72px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 640px;
+}
+
+.borobazar-getting-started-column-wrapper .borobazar-plugins-bulk-list {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.borobazar-getting-started-column-wrapper .borobazar-getting-started-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+/* Plugins page */
+.borobazar-theme-setup-content-wrapper .plugin-installation-notice {
+  font-size: 15px;
+  font-weight: normal;
+  color: var(--color-dark-text);
+  line-height: 2;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.borobazar-theme-setup-content-wrapper .plugin-installation-notice a {
+  color: var(--color-dark-text);
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: underline;
+  -webkit-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.borobazar-theme-setup-content-wrapper .plugin-installation-notice a:hover {
+  color: #212121;
+}
+
+.borobazar-plugins-activation-wrapper {
+  display: grid;
+  gap: 24px;
+}
+
+/* plugin box */
+.borobazar-plugins-bulk-list {
+  border-radius: 0 3px 3px 0;
+  margin: 70px 0 40px;
+  padding: 14px 20px 11px;
+  border: 1px solid #60A5FA;
+  border-left-width: 4px;
+  background-color: #EFF6FF;
+  text-align: left;
+}
+
+.borobazar-plugins-bulk-list h3 {
+  font-size: 17px;
+  margin-bottom: 6px;
+}
+
+.borobazar-plugins-bulk-list.is-status h3 {
+  margin-bottom: 12px;
+}
+
+.borobazar-plugins-bulk-list p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.borobazar-plugins-bulk-list p img {
+  flex-shrink: 0;
+  margin-right: 4px;
+}
+
+.borobazar-plugins-bulk-list .plugin-installation-notice {
+  margin: 0;
+}
+
+.borobazar-plugins-bulk-list .plugin-installation-notice a {
+  font-weight: 400;
+  color: #212121;
+}
+
+.borobazar-plugins-bulk-list .plugin-installation-notice a:hover {
+  font-weight: 400;
+  color: var(--color-dark-text);
+  text-decoration: none;
+}
+
+.borobazar-necessary-plugins-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.borobazar-necessary-plugins {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border: 1px solid #e6e6e6;
+  background-color: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.borobazar-recommended-plugins-list {
+  margin-top: 40px;
+}
+
+.borobazar-plugins-image {
+  width: 110px;
+  height: 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #ffffff;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.borobazar-plugins-image img {
+  max-width: 100%;
+}
+
+
+.borobazar-plugins-image img[alt*='Kirki'] {
+  max-width: 140px;
+}
+
+.borobazar-plugin-importance-tag-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-bottom: 8px;
+}
+
+.borobazar-plugin-importance-tag {
+  font-size: 12px;
+  font-weight: 600;
+  height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0 6px;
+  border-radius: 3px;
+  margin-right: 6px;
+  color: #2680eb;
+  background-color: #eaf1fa;
+}
+
+.borobazar-plugin-importance-tag.required {
+  color: #f56565;
+  background-color: #f8e3e3;
+}
+
+.borobazar-plugin-importance-tag.recommended {
+  color: #38a169;
+  background-color: #e2f8e9;
+}
+
+.borobazar-plugin-importance-tag:last-child,
+.borobazar-plugin-importance-tag:only-child {
+  margin-bottom: 0;
+}
+
+.borobazar-plugins-name-version {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  padding: 15px;
+}
+
+.borobazar-plugins-name-version .plugin-name {
+  font-size: 15px;
+  font-weight: bold;
+  color: var(--color-dark-text);
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+.borobazar-plugins-name-version .plugin-install-btn a {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--color-dark-text);
+  text-decoration: underline;
+  -webkit-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.borobazar-plugins-name-version .plugin-install-btn a:hover {
+  color: #212121;
+  text-decoration: none;
+}
+
+/* Plugin status table */
+.borobazar-theme-plugins-status-wrapper {
+  margin: 60px auto;
+  max-width: 640px;
+}
+
+.borobazar-theme-plugins-status-wrapper:last-child {
+  margin-bottom: 0;
+}
+
+.borobazar-theme-plugins-status-table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 6px;
+  border: 1px solid var(--color-border-lighter);
+  overflow: hidden;
+}
+
+@media screen and (max-width: 620px) {
+  .borobazar-theme-plugins-status-table {
+    width: 100%;
+  }
+}
+
+.borobazar-theme-plugins-status-table .plugin-status-table-row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.borobazar-theme-plugins-status-table .plugin-status-table-head {
+  width: 100%;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: var(--color-bg);
+}
+
+.borobazar-theme-plugins-status-table .plugin-status-table-body {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.borobazar-theme-plugins-status-table .plugin-status-table-column {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-dark-text);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 1px solid var(--color-border-lighter);
+  border-right: 1px solid var(--color-border-lighter);
+  padding: 0 15px;
+  width: 100%;
+  height: 70px;
+}
+
+.borobazar-theme-plugins-status-table .plugin-status-table-column:last-child {
+  border-right: 0;
+}
+
+.borobazar-theme-plugins-status-table
+  .plugin-status-table-row:last-child
+  .plugin-status-table-column {
+  border-bottom: 0;
+}
+
+.borobazar-theme-plugins-status-table
+  .plugin-status-table-head
+  .plugin-status-table-column {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--h6-color);
+  font-family: var(--h6-font-family);
+  height: 100%;
+}
+
+.borobazar-theme-plugins-status-table .plugin-status-table-column.name-column {
+  width: 100%;
+}
+
+@media screen and (max-width: 620px) {
+  .borobazar-theme-plugins-status-table .plugin-status-table-column.name-column {
+    width: 100%;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+  }
+  .borobazar-theme-plugins-status-table .plugin-status-table-column.status-column {
+    width: 160px;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+  }
+}
+
+.borobazar-theme-plugins-status-table .plugin-status-table-column.status-column {
+  width: 160px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.borobazar-theme-plugins-status-table .plugin-status-table-footer {
+  background-color: var(--color-bg);
+  height: 80px;
+}
+
+.borobazar-theme-plugins-status-table
+  .plugin-status-table-footer
+  .plugin-status-table-row {
+  height: 100%;
+}
+
+.borobazar-theme-plugins-status-table
+  .plugin-status-table-footer
+  .plugin-status-table-row
+  .plugin-status-table-column {
+  font-weight: normal;
+  height: 100%;
+  border-top: 1px solid var(--color-border-lighter);
+  border-right: 0;
+}
+
+.borobazar-theme-plugins-status-table
+  .plugin-status-table-footer
+  .plugin-status-table-row
+  .plugin-status-table-column
+  a {
+  font-family: var(--h6-font-family);
+  font-size: 13px;
+  font-weight: 700;
+  color: #ffffff;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: var(--color-brand);
+  border-radius: 3px;
+  text-decoration: none;
+  padding: 0 15px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.borobazar-theme-plugins-status-table
+  .plugin-status-table-footer
+  .plugin-status-table-row
+  .plugin-status-table-column
+  a:hover {
+    background-color: var(--color-brand-hover);
+}
+
+/* Setup steps */
+.borobazar-theme-setup-basic-wrapper {
+  text-align: left;
+}
+
+.borobazar-theme-setup-step {
+  display: flex;
+  align-items: center;
+  padding: 24px;
+  border-radius: 12px;
+}
+
+.borobazar-theme-setup-step:not(.is-done):hover {
+  background-color: var(--color-bg);
+}
+
+.borobazar-theme-setup-step-icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 6px;
+  background-color: var(--color-bg);
+}
+
+.borobazar-theme-setup-step:not(.is-done):hover .borobazar-theme-setup-step-icon {
+  background-color: var(--color-border-lighter);
+}
+
+.borobazar-theme-setup-step-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.borobazar-theme-setup-step-content {
+  flex: 1;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.borobazar-theme-setup-step-content h4 {
+  font-family: var(--h4-font-family);
+  color: var(--h4-color, --color-main-text);
+  font-size: 15px;
+  margin: 0 0 11px;
+}
+
+.borobazar-theme-setup-step-content p {
+  line-height: 1.2;
+}
+
+.borobazar-theme-setup-step-action {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.borobazar-theme-setup-step-action a {
+  font-family: var(--h6-font-family);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 1.2;
+  padding: 16px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  background-color: var(--color-brand);
+  transition: background-color 0.2s ease;
+}
+
+.borobazar-theme-setup-step-action a:hover,
+.borobazar-theme-setup-step-action a:focus {
+  outline: none;
+  background-color: var(--color-brand-hover);
+}
+
+.borobazar-theme-setup-step-action img {
+  width: 36px;
+  height: auto;
+}
+
+.borobazar-theme-setup-step.is-done .borobazar-theme-setup-step-icon,
+.borobazar-theme-setup-step.is-done .borobazar-theme-setup-step-content {
+  opacity: 0.5;
+}
+
+.borobazar-theme-setup-basic-wrapper.bottom-margin {
+  margin-bottom: 60px;
+}
+
+.borobazar-theme-setup-basic-wrapper > h3 {
+  margin-bottom: 30px;
+}
+
+.borobazar-theme-setup-basic-wrapper .borobazar-theme-setup-basic-item {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 16.6666666667%;
+  flex: 0 0 16.6666666667%;
+  max-width: 16.6666666667%;
+}
+
+.borobazar-theme-setup-basic-wrapper
+  .borobazar-theme-setup-basic-item
+  .borobazar-theme-setup-basic-status-icon {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin: 0 auto;
+  padding-bottom: 70px;
+}
+
+.borobazar-theme-setup-basic-wrapper
+  .borobazar-theme-setup-basic-item
+  .borobazar-theme-setup-basic-status-icon
+  img {
+  width: 30px;
+  height: auto;
+  z-index: 1;
+  position: relative;
+}
+
+.borobazar-theme-setup-basic-wrapper
+  .borobazar-theme-setup-basic-item
+  .borobazar-theme-setup-basic-status-icon:before {
+  content: '';
+  width: 1px;
+  height: 100%;
+  border-left: 1px dashed #e6e6e6;
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+
+.borobazar-theme-setup-basic-wrapper
+  .borobazar-theme-setup-basic-item
+  .borobazar-theme-setup-basic-status-icon:after {
+  content: '';
+  width: 100%;
+  height: 1px;
+  border-top: 1px dashed #e6e6e6;
+  position: absolute;
+  top: 15px;
+  left: 50%;
+}
+
+.borobazar-theme-setup-basic-wrapper
+  .borobazar-theme-setup-basic-item:last-child
+  .borobazar-theme-setup-basic-status-icon:after {
+  display: none;
+}
+
+.borobazar-theme-setup-basic-wrapper
+  .borobazar-theme-setup-basic-item
+  .borobazar-theme-setup-basic-infos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.borobazar-theme-setup-basic-wrapper
+  .borobazar-theme-setup-basic-item:last-child
+  .borobazar-theme-setup-basic-infos {
+  padding-bottom: 0;
+}
+
+.borobazar-theme-setup-basic-wrapper
+  .borobazar-theme-setup-basic-item
+  .borobazar-theme-setup-basic-infos
+  h4 {
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--color-dark-text);
+  margin-top: 7px;
+  margin-bottom: 15px;
+}
+
+.borobazar-theme-setup-basic-wrapper
+  .borobazar-theme-setup-basic-item
+  .borobazar-theme-setup-basic-infos
+  p {
+  font-size: 14px;
+  font-weight: normal;
+  color: var(--color-dark-text);
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.borobazar-theme-setup-basic-wrapper
+  .borobazar-theme-setup-basic-item
+  .borobazar-theme-setup-basic-infos
+  a {
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  height: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #3a3a3a;
+  border-radius: 3px;
+  text-decoration: none;
+  padding: 0 12px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  width: auto;
+}
+
+.borobazar-theme-setup-basic-wrapper
+  .borobazar-theme-setup-basic-item
+  .borobazar-theme-setup-basic-infos
+  a:hover {
+  background-color: #212121;
+}
+
+@media screen and (max-width: 1100px) {
+  .borobazar-theme-setup-basic-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .borobazar-theme-setup-basic-wrapper .borobazar-theme-setup-basic-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+  .borobazar-theme-setup-basic-wrapper
+    .borobazar-theme-setup-basic-item
+    .borobazar-theme-setup-basic-infos {
+    padding-left: 30px;
+    padding-bottom: 60px;
+    width: 100%;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+  .borobazar-theme-setup-basic-wrapper
+    .borobazar-theme-setup-basic-item
+    .borobazar-theme-setup-basic-status-icon {
+    width: 30px;
+    padding-bottom: 0;
+  }
+  .borobazar-theme-setup-basic-wrapper
+    .borobazar-theme-setup-basic-item
+    .borobazar-theme-setup-basic-status-icon:after {
+    display: none;
+  }
+  .borobazar-theme-setup-basic-wrapper
+    .borobazar-theme-setup-basic-item
+    .borobazar-theme-setup-basic-status-icon:before {
+    top: 40%;
+  }
+  .borobazar-theme-setup-basic-wrapper .borobazar-theme-setup-basic-item {
+    -webkit-box-flex: initial;
+    -ms-flex: initial;
+    flex: initial;
+    max-width: none;
+  }
+  .borobazar-theme-setup-basic-wrapper
+    .borobazar-theme-setup-basic-item:last-child
+    .borobazar-theme-setup-basic-status-icon:before {
+    display: none;
+  }
+}
+
+/* Misc Page */
+.borobazar-misc-info-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: flex-start;
+  padding: 24px;
+  border-radius: 6px;
+  border: 1px solid var(--color-border-lighter);
+  text-decoration: none;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.borobazar-misc-info-img-wrapper {
+  margin-right: 20px;
+}
+
+.borobazar-misc-info-img-wrapper img {
+  width: 32px;
+  height: auto;
+  object-fit: contain;
+}
+
+.borobazar-misc-info-content-wrapper h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+
+.borobazar-getting-started-faq-wrapper h3 {
+  font-size: 15px;
+  line-height: 1.6;
+  font-weight: 600;
+  color: var(--h6-color);
+  margin: 0;
+  padding: 20px 24px;
+  background: var(--color-bg);
+  border-radius: 4px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.faq-header-icon {
+  margin-left: 28px;
+}
+
+.faq-header-icon-collapse {
+  display: none;
+}
+
+.borobazar-getting-started-faq-content {
+  padding: 0 24px;
+  max-height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: max-height 0.2s ease-out, opacity 0.2s ease-out 0.1s;
+}
+
+.borobazar-getting-started-faq-content p {
+  margin: 24px 0;
+}
+
+.borobazar-getting-started-faq-wrapper .active + .borobazar-getting-started-faq-content {
+  opacity: 1;
+  visibility: visible;
+}
+
+.borobazar-getting-started-faq-wrapper .active .faq-header-icon-collapse {
+  display: inline-block;
+}
+
+.borobazar-getting-started-faq-wrapper .active .faq-header-icon-expand {
+  display: none;
+}
+
+.requirement-success {
+  color: #36ab80;
+}
+
+.requirement-error {
+  color: #fd5c63;
+}
+
+.borobazar-theme-setup-title,
+.borobazar-theme-setup-content-wrapper .borobazar-theme-setup-title {
+  margin-bottom: 40px;
+}
+
+.borobazar-theme-setup-import-demo-data {
+  width: 300px;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-top: 70px;
+  cursor: not-allowed;
+}
+
+.borobazar-theme-setup-import-demo-data a,
+.borobazar-theme-setup-activation-data form button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--color-brand);
+  color: #fff;
+  border-radius: 6px;
+  height: 44px;
+  min-width: 300px;
+  max-width: 100%;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: var(--h6-font-family);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Licence Activation Form Style*/
+.borobazar-theme-setup-activation-data {
+  margin-top: 70px;
+}
+
+.borobazar-theme-setup-activation-data .notice {
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 30px;
+}
+
+.borobazar-theme-setup-activation-data form {
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: #fafafa;
+  border-radius: 6px;
+  border: 1px solid #e9e9e9;
+  margin: 30px auto 40px;
+  padding: 30px;
+  display: flex;
+  width: 800px;
+}
+
+.borobazar-theme-setup-activation-data .license-key {
+  width: 60%;
+  margin-right: 17px;
+  padding: 7px;
+}
+
+.borobazar-theme-setup-activation-data form button {
+  min-width: 180px;
+  width: 35%;
+  border: 0;
+}
+
+.borobazar-theme-setup-activation-form > h3 {
+  margin-top: 0;
+  text-align: center;
+}
+
+/* Demo data style */
+.borobazar-theme-setup-import-demo-data a.disabled {
+  background-color: #d9d9d9;
+  pointer-events: none;
+}
+
+.borobazar-theme-setup-pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid var(--color-border-main);
+  border-top: 0;
+}
+
+.borobazar-theme-setup-pagination a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  height: 55px;
+  padding: 10px;
+  background-color: #fff;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: var(--h6-font-family);
+  color: var(--h6-color, --color-main-text);
+  text-decoration: none;
+  -webkit-transition: 0.15s ease-in-out;
+  -o-transition: 0.15s ease-in-out;
+  transition: 0.15s ease-in-out;
+}
+
+.borobazar-theme-setup-pagination a:last-child {
+  border-left: 1px solid var(--color-border-main);
+}
+
+.borobazar-theme-setup-pagination a:hover {
+  background-color: var(--color-brand);
+  color: #fff;
+  border-color: var(--color-brand);
+}
+
+.borobazar-theme-setup-pagination a:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: 0;
+}
+
+.borobazar-theme-setup-pagination a.next {
+  margin-left: auto;
+}
+
+.borobazar-theme-setup-pagination a.disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.borobazar-theme-setup-pagination a span {
+  margin: 0 10px;
+  color: #212121;
+  -webkit-transition: 0.15s ease-in-out;
+  -o-transition: 0.15s ease-in-out;
+  transition: 0.15s ease-in-out;
+  font-size: 16px;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+}
+
+.borobazar-theme-setup-pagination a:hover span {
+  color: #fff;
+}
+
+.ocdi h2:first-child, .ocdi h3:first-child {
+  margin-top: 1em;
+}

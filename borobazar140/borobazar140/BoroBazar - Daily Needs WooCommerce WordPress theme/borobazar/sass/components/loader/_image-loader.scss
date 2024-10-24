@@ -1,0 +1,44 @@
+// styles for image loader
+@keyframes contentLoading {
+  0% {
+    background-color: #f1f6f9;
+  }
+  50% {
+    background-color: #e6e6e6;
+  }
+  100% {
+    background-color: #f1f6f9;
+  }
+}
+
+.borobazar-image-fade-in {
+  background-color: #f1f6f9;
+  position: relative;
+
+  &.absolute {
+    position: absolute;
+  }
+
+  &.without-image-loader {
+    background-color: transparent;
+
+    &.bg-white {
+      background-color: #ffffff;
+    }
+
+    &::before {
+      content: none;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    animation: contentLoading 2s linear infinite;
+  }
+}

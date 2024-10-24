@@ -1,0 +1,191 @@
+.woocommerce {
+
+  // woo MyAccount navigation
+  .woocommerce-MyAccount-navigation {
+    padding-right: 2%;
+
+    @media (max-width: 768px) {
+      padding-right: 0;
+      margin-bottom: 2.4em;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+
+      li {
+        list-style: none;
+        margin-bottom: 6px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        a {
+          display: block;
+          padding: 10px 16px;
+          text-decoration: none;
+          transition: all 0.2s ease;
+        }
+
+        &.is-active {
+          background-color: var(--color-bg);
+          border-left: 4px solid var(--color-brand);
+        }
+      }
+    }
+  }
+
+  // woo MyAccount content
+  .woocommerce-MyAccount-content {
+
+    // woocommerce address
+    .woocommerce-Address {
+      .woocommerce-Address-title {
+        margin-bottom: 1.2em;
+
+        h3 {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  table.my_account_orders {
+    font-size: inherit;
+
+    @include from-lg {
+      font-size: calc(var(--body-font-size) - 1px);
+    }
+
+    @include from-3xl {
+      font-size: var(--body-font-size);
+    }
+
+    .button {
+      padding: 12px 14px;
+    }
+  }
+}
+
+// when site wrapper has sidebar
+@media (max-width: 1200px) {
+  .woocommerce-account {
+    .site-wrapper-with-sidebar {
+
+      .woocommerce-MyAccount-navigation,
+      .woocommerce-MyAccount-content {
+        width: 100%;
+        float: none;
+      }
+
+      .woocommerce-MyAccount-content {
+        padding-top: 32px;
+      }
+    }
+  }
+}
+
+// custom WooCommerce login page design
+.woocommerce-account:not(.logged-in) {
+  @include from-sm {
+    background-color: var(--color-bg);
+  }
+
+  .site-wrapper {
+    justify-content: center;
+  }
+
+  #primary .woocommerce {
+    margin-bottom: 0;
+  }
+
+  .woocommerce-form {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+  }
+
+  .woocommerce-form-login__submit {
+    margin-right: 0;
+  }
+}
+
+.borobazar-auth-wrapper {
+  &.with-cover-image {
+    @include from-2xl {
+      max-width: 1256px;
+    }
+
+    @media (max-width: 1023px) {
+      max-width: 560px;
+    }
+  }
+
+  &.without-cover-image {
+    max-width: 580px;
+  }
+
+  .woocommerce-error,
+  .woocommerce-info,
+  .woocommerce-message {
+    padding-left: 3rem;
+  }
+}
+
+.borobazar-auth-media {
+  img {
+    height: 100%;
+  }
+}
+
+//Mobile OPT popup
+.rq-otp-modal .firebase-otp-phone-button,
+.rq-otp-verify-section .code-submit {
+  background-color: var(--color-brand);
+  border-color: var(--color-brand);
+
+  &:hover {
+    background-color: var(--color-brand-hover);
+    border-color: var(--color-brand-hover);
+  }
+}
+
+// nextend social login
+.borobazar-nextend-wrapper {
+  @apply mt-4;
+
+  .nsl-container {
+    &.nsl-container-block {
+      .nsl-container-buttons {
+        @apply grid gap-2;
+        @apply py-0;
+
+        a {
+          @apply my-0;
+        }
+      }
+    }
+
+    .nsl-button-svg-container {
+      @apply flex-initial;
+    }
+
+    .nsl-button-default {
+      @apply justify-center;
+
+      .nsl-button-label-container {
+        @apply flex-initial m-0;
+      }
+    }
+  }
+}
+
+.nsl-button {
+  .nsl-button-label-container {
+    b {
+      @apply text-inherit;
+    }
+  }
+}

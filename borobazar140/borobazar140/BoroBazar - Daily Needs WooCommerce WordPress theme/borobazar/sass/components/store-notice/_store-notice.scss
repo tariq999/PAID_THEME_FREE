@@ -1,0 +1,9 @@
+.borobazar-store-notice {
+  color: var(--color-store-notice-text);
+  background-color: var(--color-store-notice-bg);
+
+  a:hover,
+  a:focus {
+    color: var(--color-store-notice-text);
+  }
+}

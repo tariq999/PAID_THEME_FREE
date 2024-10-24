@@ -1,0 +1,262 @@
+v1.3.9
+-- Updated: Bacola Core plugin.
+-- Updated: WooCommerce.
+-- Updated: Envato Market plugin.
+
+v1.3.8
+-- Fixed: Single Product with video.
+-- Fixed: Sigle Product zoom.
+-- Updated: Bacola Core plugin.
+-- Updated: WooCommerce.
+
+v1.3.7
+-- Fixed: Product Gallery.
+-- Updated: WooCommerce.
+
+v1.3.6
+-- Updated: WooCommerce.
+-- Updated: Bacola Core plugin.
+-- Fixed: The button issue on widget.
+
+v1.3.5
+-- Updated: WooCommerce.
+-- Updated: Bacola Core plugin.
+
+v1.3.4
+-- Updated: WooCommerce.
+-- Updated: Bacola Core plugin.
+
+v1.3.3
+-- Updated: WooCommerce outdated files.
+-- Updated: Bacola Core plugin.
+
+v1.3.2
+-- Updated: Bacola Core plugin.
+-- Updated: WooCommerce.
+
+v1.3.1
+-- Updated: WooCommerce outdated files.
+
+v1.3.0
+-- Added: SKU Search option.
+-- Updated: Bacola Core plugin.
+-- Updated: WooCommerce 7.7.2.
+
+v1.2.9
+-- Updated: Ajax Search Form.
+-- Updated: Bacola Core plugin.
+-- Updated: WooCommerce 7.5.1.
+
+v1.2.8
+-- Updated: Bacola Core plugin.
+-- Updated: WooCommerce 7.5.1.
+
+v1.2.7
+-- Added: Mega Menu with Elementor Template.
+-- Added: Icon picker for the menu.
+-- Updated: Bacola Core plugin.
+-- Updated: WooCommerce outdated files.
+
+v1.2.6
+-- Added: Advanced Badge Settings.
+-- Updated: Ajax search form.
+-- Updated: Deprecated functions.
+-- Updated: Bacola Core plugin.
+
+v1.2.5
+-- Added: Sticky add to cart.
+-- Added: Redirect after login.
+-- Added: Ajax Login/Register Form.
+-- Updated: Infinite - Load More pagination.
+-- Updated: Ajax add to cart notice.
+-- Updated: Bacola Core plugin.
+-- Updated: WC Marketplace - MultiVendorX.
+-- Updated: Deprecated functions.
+-- Updated: WooCommerce outdated files.
+
+v1.2.4
+-- Added: Clear Shopping Cart button.
+-- Updated: Bacola Core plugin.
+-- Updated: WooCommerce.
+
+v1.2.3
+-- Updated: WooCommerce outdated files.
+-- Updated: Quick Comparison Table.
+
+v1.2.2
+-- Updated: Preloader.
+-- Updated: Bacola Core plugin.
+-- Updated: WooCommerce 7.0.0.
+
+v1.2.1
+-- Added: Maintenance Mode.
+-- Added: Popup Subscribe types.
+-- Updated: Buy Now button.
+-- Updated: Bacola Core plugin.
+-- Updated: WooCommerce.
+
+v1.2.0
+-- Added: Single Sticky Titles.
+-- Added: Single Navigation.
+-- Updated: Bacola Core plugin.
+-- Updated: WooCommerce.
+
+v1.1.9
+-- Added: Login-Register Form tab.
+-- Added: Free Shipping Bar.
+-- Added: Hide Shipping Methods When Free is available.
+-- Updated: Bacola Core language file.
+-- Updated: Bacola Core plugin.
+-- Updated: WooCommerce.
+
+v1.1.8
+-- Added: Back to Top button.
+-- Added: Color Settings for Mobile Menu.
+-- Updated: Load More and Infinite Scroll.
+-- Updated: Attribute swatches.
+-- Updated: Bacola Core plugin.
+-- Updated: WooCommerce.
+
+v1.1.7
+-- Updated: Bacola Core plugin.
+-- Updated: Bacola Product Categories widget.
+-- Updated: Registration fields.
+-- Updated: Recently Viewed Products.
+-- Updated: WooCommerce.
+-- Updated: Variations.
+
+v1.1.6
+-- Updated: Bacola Core plugin.
+-- Updated: WooCommerce.
+
+v1.1.5
+-- Added: Tag Filter for Elementor widgets.
+-- Updated: Bacola Core plugin.
+-- Updated: WooCommerce
+-- Fixed: Query_Posts.
+-- Fixed: jQuery notice.
+
+v1.1.4
+-- Updated: Bacola Core plugin.
+-- Updated: WooCommerce
+-- Updated: The language file.
+
+v1.1.3
+-- Added: Side Cart.
+-- Added: Buy Now button for product detail.
+-- Added: Single Product Stock Progress Bar.
+-- Added: Single Product Time Countdown.
+-- Added: Min Order Amount.
+-- Added: New Fields for the Registration Form.
+-- Added: Move Review Tab option.
+-- Added: Catalog Mode.
+-- Added: WC Marketplace Vendor Grid Widget.
+-- Updated: Thank You Page.
+-- Updated: Orders Page.
+-- Updated: Product Categories Widget.
+-- Updated: Bacola Core plugin.
+-- Updated: WooCommerce.
+
+v1.1.2
+-- Added: Order on WhatsApp.
+-- Added: Category Desc After Products.
+-- Updated: WooCommerce plugin.
+-- Updated: Bacola Core plugin.
+-- Updated: Envato Market plugin.
+
+v1.1.1
+-- Added: Product 360 View.
+-- Added: Product Detail Image Column Option.
+-- Added: Product Detail Wide Option.
+-- Added: Elementor Templates for Header.
+-- Added: Elementor Templates for Footer.
+-- Added: Elementor Templates for Shop.
+-- Added: Elementor Templates for Categories.
+-- Added: Include Option for Category Widget on Elementor.
+-- Added: Slide Speed Option.
+-- Updated: WooCommerce plugin.
+-- Updated: Bacola Core plugin.
+-- Updated: Footer Column Option.
+-- Updated: Categories on Shop Page.
+
+v1.1.0
+-- Added: Categories for Mobile.
+-- Added: Added to Cart Ajax Popup Notice.
+-- Added: Dokan Sidebar Filter for Mobile.
+-- Added: Logo Size Slider.
+-- Updated: WooCommerce plugin.
+-- Updated: Bacola Core plugin.
+
+v1.0.9
+-- Added: Recently Viewed Products.
+-- Added: Min/Max Quantity Option.
+-- Added: Middle Sticky Header.
+-- Added: Single Mobile Sticky Add to Cart.
+-- Added: Single Social Share Options.
+-- Added: Related Products by Tags.
+-- Added: 3 Badge Types.
+-- Added: Ajax Add to Cart for Quickview.
+-- Fixed: Product Variable Quantity.
+-- Updated: WooCommerce plugin.
+-- Updated: Bacola Core plugin.
+
+v1.0.8
+-- Added: Popup Location.
+-- Added: GDPR image option.
+-- Fixed: Get_Cart issue.
+-- Updated: Bacola Core plugin.
+-- Updated: WooCommerce.
+
+v1.0.7
+-- Added: Ajax Shop Filters.
+-- Added: Ajax Pagination.
+-- Added: Ajax Single Add to Cart button.
+-- Added: Hide Out of Stock items option.
+-- Added: Mobile Bottom Menu settings.
+-- Added: Column Options in the shop page.
+-- Updated: The color options.
+-- Updated: Bacola Core plugin.
+-- Updated: WooCommerce.
+-- Fixed: Mobile Mini Cart.
+
+v1.0.6
+-- Added: Video button for Products.
+-- Added: Product Image Zoom.
+-- Added: Mobile Bottom Menu Color options.
+-- Added: Related Products Column Option.
+-- Updated: Bacola Core plugin.
+
+v1.0.5
+-- Added: GDPR Cookie Banner.
+-- Added: Popup Newsletter.
+-- Added: Dokan Lite plugin.
+-- Added: Stock Quantity option.
+-- Added: WhatsApp share button.
+-- Added: Preloader.
+-- Updated: Bacola Core plugin.
+
+
+v1.0.4
+-- Added: Product Single Types.
+-- Added: Mobile Sticky Menu.
+-- Added: Advanced Header Color options.
+-- Added: Advanced Footer Color options.
+-- Added: Advanced Style options for the Elementor Widgets.
+-- Updated: Bacola Core plugin.
+
+v1.0.3
+-- Updated: Bacola Core plugin.
+-- Updated: WooCommerce.
+-- Updated: Checkout Page.
+-- Updated: Cart Page.
+-- Updated: Theme Setup Wizard.
+
+v1.0.2
+-- Updated: Bacola Core plugin.
+-- Updated: WooCommerce.
+-- Updated: Theme Setup Wizard.
+-- Updated: The color options.
+
+v1.0.1
+-- Added: Theme Setup Wizard.
+-- Updated: WooCommerce.

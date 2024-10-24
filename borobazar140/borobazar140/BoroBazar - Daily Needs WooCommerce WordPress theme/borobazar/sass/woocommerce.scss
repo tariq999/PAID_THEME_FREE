@@ -1,0 +1,93 @@
+/*
+Theme Name: borobazar
+WooCommerce styles override
+*/
+
+// WooCommerce color variables
+$woocommerce__bg-error: #fef2f2;
+$woocommerce__color-error: #b91c1c;
+$woocommerce__bg-success: #ecfdf5;
+$woocommerce__color-success: #047857;
+$woocommerce__bg-info: #eff6ff;
+$woocommerce__color-info: #1d4ed8;
+
+// Import variables and mixins
+@import "abstracts/abstracts";
+
+/**
+ * Shop tables
+ */
+@import "plugins/woocommerce/tables";
+
+/**
+ * General WooCommerce components
+ */
+@import "plugins/woocommerce/components";
+
+/**
+ * Products
+ */
+@import "plugins/woocommerce/products";
+
+/**
+ * Single product
+ */
+@import "plugins/woocommerce/single-product";
+
+/**
+ * Cart
+ */
+@import "plugins/woocommerce/cart";
+
+/**
+ * Checkout
+ */
+@import "plugins/woocommerce/checkout";
+
+/**
+ * Account
+ */
+@import "plugins/woocommerce/account";
+
+/**
+ * WooCommerce widgets
+ */
+@import "plugins/woocommerce/widgets";
+
+/**
+ * Product Card Alpine
+ */
+@import "plugins/woocommerce/product-card/alpine";
+
+/**
+ * Product Card Oak
+ */
+@import "plugins/woocommerce/product-card/oak";
+
+/**
+ * Product Card Maple
+ */
+@import "plugins/woocommerce/product-card/maple";
+/**
+ * Product Card Sweetgum
+ */
+@import "plugins/woocommerce/product-card/sweetgum";
+/**
+ * Product Card Broomstick
+ */
+ @import "plugins/woocommerce/product-card/broomstick";
+
+ /**
+ * Product Card Obsidian
+ */
+ @import "plugins/woocommerce/product-card/obsidian";
+
+/**
+ * Product Deals Card Coral
+ */
+@import "plugins/woocommerce/product-deals/coral";
+
+/**
+ * YITH Wishlist
+ */
+@import "plugins/woocommerce/wishlist";

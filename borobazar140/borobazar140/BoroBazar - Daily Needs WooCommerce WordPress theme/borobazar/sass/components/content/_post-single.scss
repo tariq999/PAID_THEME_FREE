@@ -1,0 +1,50 @@
+/*--------------------------------------------------------------
+# Blog post single style
+--------------------------------------------------------------*/
+.single-post {
+  .entry-content {
+    margin: 1.6em 0 0;
+
+    @include from-sm {
+      margin: 1.85em 0 0;
+    }
+
+    iframe[src*='video'],
+    iframe[src*='youtube'] {
+      height: auto !important;
+      aspect-ratio: 4 / 2.25;
+    }
+  }
+
+  .entry-post-tags,
+  .entry-post-categories {
+    clear: both;
+    margin-top: 1.5em;
+
+    @include from-sm {
+      margin-top: 2em;
+    }
+
+    a {
+      display: initial;
+      color: var(--color-brand);
+      font-weight: 500;
+      text-decoration: none;
+      margin-left: 4px;
+      margin-bottom: 4px;
+      padding-bottom: 1px;
+      margin-bottom: -1px;
+      background-image: linear-gradient(currentColor, currentColor);
+      background-position: 0 100%;
+      background-repeat: no-repeat;
+      background-size: 100% 1px;
+      transition: background-size 0.2s ease-out;
+
+      &:hover,
+      &:focus {
+        color: var(--color-brand-hover);
+        background-size: 0 1px;
+      }
+    }
+  }
+}

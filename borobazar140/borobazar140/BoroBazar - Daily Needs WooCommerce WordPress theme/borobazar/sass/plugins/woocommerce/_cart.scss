@@ -1,0 +1,273 @@
+.woocommerce-cart {
+  table.cart {
+    .product-remove {
+      @include from-lg {
+        width: 100px;
+      }
+
+      a,
+      .remove {
+        margin: auto 0 auto auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 2.25rem;
+        height: 2.25rem;
+        font-weight: 400;
+        text-indent: 4rem;
+        overflow: hidden;
+        background-size: 18px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: transparent;
+        background-image: url("data:image/svg+xml,%3Csvg opacity='0.7' stroke='%23000' fill='none' stroke-width='1.5' viewBox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' height='1em' width='1em' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolyline points='3 6 5 6 21 6'%3E%3C/polyline%3E%3Cpath d='M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2'%3E%3C/path%3E%3Cline x1='10' y1='11' x2='10' y2='17'%3E%3C/line%3E%3Cline x1='14' y1='11' x2='14' y2='17'%3E%3C/line%3E%3C/svg%3E");
+        transition: all 0.2s ease;
+
+        @include from-lg {
+          margin: auto;
+        }
+
+        &:hover,
+        &:focus {
+          background-image: url("data:image/svg+xml,%3Csvg stroke='%23B91C1C' fill='none' stroke-width='1.5' viewBox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' height='1em' width='1em' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolyline points='3 6 5 6 21 6'%3E%3C/polyline%3E%3Cpath d='M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2'%3E%3C/path%3E%3Cline x1='10' y1='11' x2='10' y2='17'%3E%3C/line%3E%3Cline x1='14' y1='11' x2='14' y2='17'%3E%3C/line%3E%3C/svg%3E");
+          background-color: #fee2e2;
+        }
+      }
+    }
+
+    .product-thumbnail {
+      &::before {
+        content: none;
+      }
+
+      @include from-lg {
+        width: 12%;
+      }
+
+      a {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+
+        @include from-lg {
+          justify-content: flex-start;
+        }
+      }
+    }
+
+    img {
+      width: 72px;
+      border-radius: $size__main-radius;
+    }
+
+    @media (max-width: 639px) {
+      td.actions {
+        .coupon {
+          display: grid;
+
+          .input-text {
+            width: 100%;
+            margin-right: 0;
+
+            & + .button {
+              width: 100%;
+              margin-top: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .cart-collaterals {
+    display: flex;
+    flex-direction: column;
+    clear: both;
+
+    &::before,
+    &::after {
+      content: none;
+    }
+
+    .cart_totals {
+      order: 1;
+      align-self: flex-end;
+    }
+
+    .cross-sells {
+      order: 2;
+      width: 100%;
+      float: none;
+      @include from-md {
+        margin-top: 1em;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    ul#shipping_method {
+      display: grid;
+      justify-content: flex-end;
+      padding-left: 8px;
+    }
+  }
+
+  .wc-proceed-to-checkout {
+    a.checkout-button {
+      font-size: 1.01em;
+      padding-top: 17px;
+      padding-bottom: 17px;
+
+      @include from-3xl {
+        font-size: 1.1em;
+        padding-top: 18px;
+        padding-bottom: 18px;
+      }
+    }
+  }
+
+  .borobozar-product-grid-alpine {
+    @include from-md {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    @include from-lg {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    @include from-xl {
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+
+    @include from-3xl {
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+    }
+  }
+
+  .borobozar-product-grid-oak {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    @include from-md {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    @include from-lg {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    @include from-xl {
+      gap: 1.25rem;
+    }
+
+    @include from-3xl {
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+  }
+
+  .borobozar-product-grid-maple {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+
+    @include from-lg {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    @include from-xl {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    @include from-4xl {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      .borobazar-maple-product-card {
+        @apply grid-cols-[150px,1fr];
+      }
+    }
+  }
+
+  // cart page style when layout has sidebar
+  .site-wrapper-with-sidebar {
+    table.cart {
+      .product-remove {
+        width: 100%;
+
+        a,
+        .remove {
+          margin: auto 0 auto auto;
+        }
+
+        @include from-xl {
+          width: 100px;
+
+          a,
+          .remove {
+            margin: auto;
+          }
+        }
+      }
+
+      .product-thumbnail {
+        width: 100%;
+
+        a {
+          justify-content: flex-end;
+        }
+
+        @include from-xl {
+          width: 12%;
+
+          a {
+            justify-content: flex-start;
+          }
+        }
+      }
+    }
+
+    .cart-collaterals {
+      .cart_totals {
+        width: 100%;
+
+        @include from-xl {
+          width: 48%;
+        }
+      }
+    }
+
+    .products {
+      @include from-md {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      @include from-2xl {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+
+      @include from-3xl {
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+      }
+    }
+  }
+}
+
+// fixing iPhone 5 spacing issue
+@media (max-width: 320px) {
+  .woocommerce,
+  .woocommerce-page {
+    table.cart,
+    #content table.cart {
+      td.actions {
+        .coupon {
+          .button,
+          .input-text,
+          input {
+            width: 100%;
+          }
+
+          .input-text,
+          input {
+            margin-right: 0;
+            margin-bottom: 6px;
+          }
+        }
+      }
+    }
+  }
+}

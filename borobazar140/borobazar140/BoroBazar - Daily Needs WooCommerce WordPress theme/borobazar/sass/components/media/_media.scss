@@ -1,0 +1,41 @@
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+  border: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0;
+}
+
+/* Make sure logo link wraps around logo image. */
+.custom-logo-link {
+  display: inline-flex;
+  align-items: center;
+}
+
+.entry-media {
+
+  img,
+  .mejs-container.wp-audio-shortcode {
+    border-radius: $size__main-radius;
+  }
+
+  .mejs-container.wp-audio-shortcode {
+    overflow: hidden;
+  }
+}
+
+.borobazar-video-iframe-container {
+  padding-top: 56.25%;
+  border-radius: $size__main-radius;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+}

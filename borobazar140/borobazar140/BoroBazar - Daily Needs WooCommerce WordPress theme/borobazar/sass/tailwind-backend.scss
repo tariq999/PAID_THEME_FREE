@@ -1,0 +1,148 @@
+//Tailwind CSS for WP backend
+@import 'tailwind-custom-base.scss';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer utilities {
+  //⚠️ .sticky class create conflict between tailwind and wp sticky post, so use .position-sticky instead
+  .position-sticky {
+    position: sticky;
+  }
+}
+
+.editor-styles-wrapper {
+  .borobazar-alpine-product-card {
+    &-thumb {
+      a:not(.add-to-cart):not(.button-redq-woocommerce-quick-view) {
+        @apply flex items-center justify-center w-full h-full relative overflow-hidden;
+      }
+      img {
+        @apply absolute top-0 left-0 h-full w-full object-cover;
+      }
+
+      .thumb-1 {
+        opacity: 0;
+        transition: 0.25s ease-in-out;
+      }
+
+      &:hover {
+        .thumb-1 {
+          @apply opacity-100 z-1;
+        }
+      }
+    }
+
+    del {
+      @apply text-sm text-disabled font-normal mr-1 sm:mr-1.5;
+      .amount {
+        @apply font-normal;
+      }
+    }
+
+    ins {
+      @apply bg-transparent border-0 rounded-none p-0;
+    }
+
+    .amount {
+      @apply font-semibold;
+    }
+  }
+  .borobazar-oak-product-card,
+  .borobazar-maple-product-card {
+    &-price {
+      del {
+        @apply text-sm text-disabled font-normal mr-1 sm:mr-1.5;
+      }
+
+      ins {
+        @apply bg-transparent border-0 rounded-none p-0;
+      }
+    }
+  }
+  .borobazar-oak-product-card,
+  .borobazar-maple-product-card {
+    &-thumb {
+      a:not(.add-to-cart):not(.button-redq-woocommerce-quick-view) {
+        @apply flex items-center justify-center w-full h-full relative overflow-hidden;
+      }
+      img {
+        @apply absolute top-0 left-0 h-full w-full object-cover;
+      }
+
+      .thumb-1 {
+        opacity: 0;
+        transition: 0.25s ease-in-out;
+      }
+
+      &:hover {
+        .thumb-1 {
+          @apply opacity-100 z-1;
+        }
+      }
+    }
+  }
+  .borobazar-product-deal-coral {
+    &-thumbnail {
+      img {
+        @apply opacity-100 absolute h-full w-full object-contain;
+      }
+
+      .thumb-1 {
+        opacity: 0;
+        transition: 0.25s ease-in-out;
+      }
+
+      &:hover {
+        .thumb-1 {
+          @apply opacity-100 z-1;
+        }
+      }
+    }
+    &-price {
+      @apply flex flex-row-reverse justify-center items-center mb-2;
+      del {
+        @apply text-disabled font-normal ml-2.5 text-lg;
+      }
+
+      ins {
+        @apply bg-transparent border-0 rounded-none p-0 text-2xl font-semibold;
+      }
+    }
+  }
+
+  .gs-borobazar-broomstick-product-card {
+    @apply grid grid-cols-[160px,1fr] border border-[#EAEEF2] bg-white overflow-hidden rounded-[10px] transition-all hover:shadow-product-hover;
+  }
+
+  :is(.borobazar-broomstick-product-card-price,
+  .borobazar-obsidian-product-card-price) {
+    @apply flex items-center gap-2 mb-2;
+
+    del {
+      @apply text-disabled font-normal text-base;
+    }
+
+    ins {
+      @apply bg-transparent border-0 rounded-none p-0;
+    }
+  }
+
+  .borobazar-obsidian-product-card-thumb {
+    @apply relative flex items-center justify-center w-full h-full overflow-hidden;
+
+    img {
+      @apply absolute top-0 left-0 h-full w-full object-cover;
+    }
+
+    .thumb-1 {
+      opacity: 0;
+      transition: 0.25s ease-in-out;
+    }
+
+    &:hover {
+      .thumb-1 {
+        @apply opacity-100 z-1;
+      }
+    }
+  }  
+}

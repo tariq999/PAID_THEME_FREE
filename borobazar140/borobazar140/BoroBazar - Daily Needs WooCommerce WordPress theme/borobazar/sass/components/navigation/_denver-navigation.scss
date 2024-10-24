@@ -1,0 +1,100 @@
+.header-denver {
+  .borobazar-drawer-navigation {
+    margin-left: 0;
+    margin-right: 1.5rem;
+
+    @include from-sm {
+      margin-right: 2rem;
+
+      .borobazar-join-us-btn {
+        display: none;
+      }
+    }
+  }
+
+  .borobazar-join-us-btn {
+    @include from-sm {
+      display: flex;
+    }
+  }
+
+  @media (min-width: 1025px) {
+    .borobazar-drawer-navigation {
+      display: flex;
+    }
+
+    .borobazar-header-search-handler {
+      display: none !important;
+    }
+
+    .borobazar-header-search-field {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    .borobazar-global-search-container {
+      .borobazar-global-search-overlay {
+        visibility: hidden;
+      }
+
+      &.is-searching {
+        .borobazar-global-search-overlay {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+
+    .borobazar-mini-cart-drawer-handler {
+      .hidden {
+        display: inline-flex;
+      }
+    }
+
+    .borobazar-join-us-btn {
+      .hidden {
+        display: inline-flex;
+      }
+    }
+  }
+
+  .borobazar-header-search {
+    @media (min-width: 1025px) {
+      display: block;
+    }
+
+    @include from-xl {
+      max-width: 600px;
+    }
+
+    @include from-2xl {
+      max-width: 700px;
+    }
+
+    @include from-3xl {
+      max-width: 800px;
+    }
+
+    input[type="text"] {
+      border-color: var(--color-brand);
+      box-shadow: 0 0 0 1px var(--color-brand);
+    }
+  }
+}
+
+// denver header style when bottom nav on
+.borobazar-bottom-nav-is-active {
+  .header-denver {
+    @media (max-width: 1024px) {
+      .borobazar-drawer-navigation {
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .header-denver .borobazar-join-us-btn {
+    display: none !important;
+  }
+}

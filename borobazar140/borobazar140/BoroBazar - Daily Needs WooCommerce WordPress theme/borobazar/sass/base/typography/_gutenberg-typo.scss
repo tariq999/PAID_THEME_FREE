@@ -1,0 +1,21 @@
+.has-huge-font-size,
+.has-larger-font-size {
+  font-size: var(--h1-font-size);
+}
+
+.has-large-font-size {
+  font-size: var(--h2-font-size);
+}
+
+.has-normal-font-size,
+.has-regular-font-size {
+  font-size: var(--h3-font-size);
+}
+
+.has-medium-font-size {
+  font-size: calc(var(--h4-font-size) + 2px);
+}
+
+.has-small-font-size {
+  font-size: var(--h4-font-size);
+}

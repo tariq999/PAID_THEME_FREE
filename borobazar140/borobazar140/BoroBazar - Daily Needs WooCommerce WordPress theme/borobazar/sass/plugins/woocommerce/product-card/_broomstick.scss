@@ -1,0 +1,126 @@
+.borobazar-broomstick-product-card {
+  &-price {
+    del {
+      @apply text-sm text-disabled font-normal mr-1 sm:mr-1.5;
+    }
+
+    ins {
+      @apply bg-transparent border-0 rounded-none p-0;
+    }
+  }
+
+  &-thumb {
+    a:not(.add-to-cart):not(.button-redq-woocommerce-quick-view) {
+      @apply flex items-center justify-center w-full h-full relative overflow-hidden;
+    }
+
+    img {
+      @apply absolute h-full w-full object-contain;
+    }
+
+    .thumb-1 {
+      opacity: 0;
+      transition: 0.25s ease-in-out;
+    }
+
+    a:not(.borobazar-image-fade-in):hover {
+      .thumb-1 {
+        @apply opacity-100 z-1;
+      }
+    }
+  }
+}
+
+// super deals coral block
+// .gs-super-deal-slider-item-grid_broomstick {
+//   @apply 3xl:grid-cols-[150px,1fr] 4xl:grid-cols-[180px,1fr];
+// }
+// .borobazar-broomstick-product-card-thumb {
+//   @apply 3xl:h-40 4xl:h-48;
+// }
+
+.woocommerce {
+  div {
+    &.product {
+      .borobazar-broomstick-product-card {
+        border-radius: 10px;
+
+        &.product {
+          &.type-product {
+            img {
+              margin-bottom: 0;
+            }
+          }
+        }
+
+        .woocommerce-loop-product__title {
+          font-size: 16px;
+          font-weight: 500;
+          color: inherit;
+          margin-bottom: 0;
+          margin-top: 0;
+          line-height: 1.4;
+        }
+
+        .price {
+          font-size: 18px;
+          color: var(--color-main-text, #000000);
+
+          del {
+            font-size: 16px;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}
+
+.gs-broomstick-grid-wrap,
+.broomstick-product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 20px;
+}
+
+:is(.broomstick-product-grid,
+  .borobozar-product-grid-broomstick,
+  .gs-broomstick-grid-wrap,
+  .gs-broomstick-product-card-item) {
+  .borobazar-alpine-product-card {
+    border-radius: 10px;
+  }
+
+  :is(.borobazar-update-qty-minus,
+    .borobazar-update-qty-plus) {
+    width: 50px;
+    height: 50px;
+  }
+
+  .borobazar-update-qty-minus:not(.active-qty) {
+    border-right: 1px solid #EAEAEA;
+  }
+
+  .borobazar-update-qty-plus:not(.active-qty) {
+    border-left: 1px solid #EAEAEA;
+  }
+
+  .product_type_simple {
+    border-top: 1px solid #EAEAEA;
+  }
+
+  .borobazar-alpine-product-card-price {
+    font-size: 18px;
+
+    del {
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+}
+
+@media (max-width: 646px) {
+  .broomstick-product-grid {
+    display: block;
+  }
+}

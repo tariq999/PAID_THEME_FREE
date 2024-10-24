@@ -1,0 +1,23 @@
+*,
+::before,
+::after {
+  // need these var for border utilities classes
+  --tw-border-opacity: 1;
+  border-width: 0;
+  border-style: solid;
+  border-color: currentColor;
+  border-color: rgba(229, 231, 235, var(--tw-border-opacity));
+  // need these var for transform utilities classes
+  --tw-content: '';
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-transform: translateX(var(--tw-translate-x))
+    translateY(var(--tw-translate-y)) rotate(var(--tw-rotate))
+    skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))
+    scaleY(var(--tw-scale-y));
+}

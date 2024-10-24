@@ -1,0 +1,161 @@
+@import './accessibility';
+@import './alignments';
+@import './animations';
+
+/*
+|--------------------------------------------------------------------------
+| Custom checkbox
+|--------------------------------------------------------------------------
+|
+- Wrap the <input> with this class ".borobazar-checkbox"
+- Past this inside the wrapper: <span class="borobazar-checkbox-icon block w-5 h-5 rounded-full overflow-hidden bg-white border border-light border-2 flex-shrink-0 ml-3 bg-no-repeat bg-center hover:border-brand transition-all"></span>
+|
+*/
+.borobazar-checkbox {
+  &:hover {
+    .borobazar-checkbox-icon {
+      @apply border-brand;
+    }
+  }
+
+  > input {
+    &:checked + .borobazar-checkbox-icon {
+      @apply bg-brand;
+      @apply border-brand;
+      background-size: 13px;
+      background-image: url("data:image/svg+xml,%3Csvg width='13' height='9' viewBox='0 0 13 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.3315 1.38242L4.96559 8.74835C4.90071 8.81324 4.79566 8.81324 4.73093 8.74835L0.548547 4.56582C0.483818 4.50124 0.483818 4.39619 0.548547 4.33131L1.56481 3.31505C1.62969 3.25032 1.73474 3.25032 1.79947 3.31505L4.84841 6.36383L11.0808 0.131494C11.1458 0.0667645 11.2505 0.0667645 11.3154 0.131494L12.3315 1.14776C12.3964 1.21249 12.3964 1.31739 12.3315 1.38242Z' fill='white'/%3E%3C/svg%3E");
+
+      &.animate {
+        &:after {
+          @apply opacity-100;
+          animation: checked 0.7s;
+        }
+      }
+    }
+  }
+}
+
+.cont_select_center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -30px;
+  margin-left: -150px;
+}
+
+.cont_heg_50 {
+  position: absolute;
+  height: 50%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #fd7b52;
+}
+/* ///  END DECORATION CSS  ///  */
+
+.icon_select_mate {
+  position: absolute;
+  top: 20px;
+  right: 2%;
+  font-size: 16px;
+  height: 22px;
+  transition: all 275ms;
+}
+
+.select_mate {
+  position: relative;
+  float: left;
+  min-width: 300px;
+  width: 300px;
+  min-height: 60px;
+  font-family: 'Roboto';
+  color: #777;
+  font-weight: 300;
+  background-color: #fff;
+  box-shadow: 1px 2px 10px -2px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  transition: all 375ms ease-in-out;
+  /* Oculto el elemento select */
+  select {
+    position: absolute;
+    overflow: hidden;
+    height: 0px;
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+.cont_list_select_mate {
+  position: relative;
+  float: left;
+  width: 100%;
+}
+
+.cont_select_int {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 999;
+  overflow: hidden;
+  height: 0px;
+  width: 100%;
+  background-color: #fff;
+  padding: 0px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  border-radius: 0px 0px 3px 3px;
+  box-shadow: 1px 4px 10px -2px rgba(0, 0, 0, 0.2);
+  transition: all 375ms ease-in-out;
+
+  li {
+    position: relative;
+    float: left;
+    width: 96%;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #f5f5f5;
+    list-style-type: none;
+    padding: 10px 2%;
+    margin: 0px;
+    transition: all 275ms ease-in-out;
+    display: block;
+    cursor: pointer;
+
+    &:last-child {
+      border-radius: 3px;
+      border-bottom: 0px;
+    }
+    &:hover {
+      background-color: #eeeeee;
+    }
+  }
+
+  .active {
+    background-color: #eeeeee;
+  }
+}
+
+/* etiqueta <p> con la opcion selecionada  */
+.selecionado_opcion {
+  padding: 20px 2%;
+  width: 96%;
+  display: block;
+  margin: 0px;
+  cursor: pointer;
+}
+
+// gutenberg wrapper block data-align="full" style
+.wp-block-borobazar-blocks-borobazar-wrapper[data-align='full'] {
+  width: 100vw;
+  margin-left: -50vw;
+  position: relative;
+  left: 50%;
+}
+
+//Hide <br/> tag on mobile
+.hide-br-mobile {
+  br {
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+}

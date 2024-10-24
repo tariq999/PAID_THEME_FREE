@@ -1,0 +1,54 @@
+// Media query from >= 640px device
+@mixin from-phone {
+  @media (min-width: 500px) {
+    @content;
+  }
+}
+
+@mixin from-sm {
+  @media (min-width: 640px) {
+    @content;
+  }
+}
+
+// Media query from >= 768px device
+@mixin from-md {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+// Media query from >= 1024px device
+@mixin from-lg {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+// Media query from >= 1280px device
+@mixin from-xl {
+  @media (min-width: 1280px) {
+    @content;
+  }
+}
+
+// Media query from >= 1440px device
+@mixin from-2xl {
+  @media (min-width: 1440px) {
+    @content;
+  }
+}
+
+// Media query from >= 1536px device
+@mixin from-3xl {
+  @media (min-width: 1536px) {
+    @content;
+  }
+}
+
+// Media query from >= 1780px device
+@mixin from-4xl {
+  @media (min-width: 1780px) {
+    @content;
+  }
+}

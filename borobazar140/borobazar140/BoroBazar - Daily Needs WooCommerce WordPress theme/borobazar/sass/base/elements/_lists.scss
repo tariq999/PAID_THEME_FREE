@@ -1,0 +1,95 @@
+ul,
+ol,
+.wp-block-freeform.block-library-rich-text__tinymce ul,
+.wp-block-freeform.block-library-rich-text__tinymce ol {
+  margin: 0 0 2em 0;
+  padding-left: 24px;
+
+  @include from-md {
+    margin: 0 0 2.4em 0;
+  }
+
+  @include from-lg {
+    margin: 0 0 2.6em 0;
+  }
+}
+
+ul {
+  list-style: disc;
+}
+
+ol {
+  list-style: decimal;
+}
+
+li>ul,
+li>ol {
+  margin-bottom: 0;
+}
+
+dl {
+  margin: 0 0 2em 0;
+
+  @include from-md {
+    margin: 0 0 2.4em 0;
+  }
+
+  @include from-lg {
+    margin: 0 0 2.6em 0;
+  }
+}
+
+dt {
+  color: var(--color-main-text);
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+dd {
+  margin: 0 16px 16px;
+
+  @include from-sm {
+    margin: 0 24px 24px;
+  }
+}
+
+// style for page and comment content lists
+.entry-content,
+.comment-body {
+
+  ul,
+  ol {
+    li {
+      margin-bottom: 12px;
+
+      @include from-sm {
+        margin-bottom: 16px;
+      }
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+
+      &.blocks-gallery-item {
+        &:last-child {
+          margin-bottom: 1em;
+        }
+      }
+    }
+
+    a {
+      margin-bottom: 0;
+    }
+
+    ul,
+    ol {
+      margin-top: 12px;
+      margin-bottom: 12px;
+
+      @include from-sm {
+        margin-top: 16px;
+        margin-bottom: 16px;
+      }
+    }
+  }
+}

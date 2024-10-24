@@ -1,0 +1,83 @@
+.borobazar-alpine-product-card {
+  &-price {
+    del {
+      @apply text-sm text-disabled font-normal mr-1 sm:mr-1.5;
+    }
+
+    ins {
+      @apply bg-transparent border-0 rounded-none p-0;
+    }
+  }
+  &-thumb {
+    a:not(.add-to-cart):not(.button-redq-woocommerce-quick-view) {
+      @apply flex items-center justify-center w-full h-full relative overflow-hidden;
+    }
+    img {
+      @apply absolute h-full w-full object-cover;
+    }
+
+    .thumb-1 {
+      opacity: 0;
+      transition: 0.25s ease-in-out;
+    }
+
+    a:not(.borobazar-image-fade-in):hover {
+      .thumb-1 {
+        @apply opacity-100 z-1;
+      }
+    }
+  }
+}
+
+.woocommerce {
+  .borobazar-grid-alpine {
+    > div {
+      @apply h-full;
+    }
+  }
+  .borobazar-alpine-product-card {
+    img {
+      margin-bottom: 0 !important;
+    }
+  }
+
+  div {
+    &.product {
+      .borobazar-alpine-product-card {
+        &.product {
+          &.type-product {
+            img {
+              margin-bottom: 0;
+            }
+          }
+        }
+
+        span {
+          &.price {
+            @apply text-sm sm:text-base text-main font-semibold;
+
+            del {
+              @apply text-sm text-disabled font-normal mr-1 sm:mr-1.5;
+              .amount {
+                @apply font-normal;
+              }
+            }
+
+            ins {
+              @apply bg-transparent border-0 rounded-none p-0;
+            }
+
+            .amount {
+              @apply font-semibold;
+            }
+          }
+        }
+
+        .woocommerce-loop-product__title {
+          @apply text-sm sm:text-md leading-6 m-0 font-normal font-body;
+          color: inherit;
+        }
+      }
+    }
+  }
+}

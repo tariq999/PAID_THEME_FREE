@@ -1,0 +1,37 @@
+{
+  "name": "redq/borobazar",
+  "type": "wordpress-theme",
+  "description": "BoroBazar WordPress E-Commerce Theme is perfect for increasing your sales, turnover and profits. This attractive-but-packed WooCommerce theme is literally the best E-Commerce theme for your next business",
+  "keywords": [
+    "WordPress",
+    "Themes"
+  ],
+  "homepage": "https://redq.io",
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "RedQ",
+      "homepage": "https://redq.io"
+    }
+  ],
+  "require": {},
+  "require-dev": {},
+  "scripts": {},
+  "autoload": {
+    "classmap": [
+      "framework"
+    ],
+    "psr-4": {
+      "Turbo\\Setup\\": "setup/"
+    },
+    "files": [
+      "framework/inc/template-hooks.php",
+      "framework/inc/template-hooks-functions.php",
+      "framework/inc/template-functions.php",
+      "framework/inc/helper-functions.php",
+      "framework/inc/theme-options.php",
+      "framework/inc/theme-custom-functions.php",
+      "framework/inc/breadcrumb.php"
+    ]
+  }
+}

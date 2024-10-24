@@ -1,0 +1,107 @@
+.borobazar-page-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 54px 16px;
+  background-color: #E7F2F0;
+
+  @include from-lg {
+    padding: 64px 16px;
+    min-height: 260px;
+  }
+
+  @include from-2xl {
+    padding: 80px 16px;
+  }
+
+  &-content {
+    color: var(--banner-text-color);
+    max-width: 920px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &-subtitle {
+    display: block;
+    color: var(--color-brand);
+    font-size: calc(var(--special-font-size) - 10px);
+    font-family: var(--special-font-family);
+    font-weight: var(--special-font-weight);
+    font-style: var(--special-font-style);
+    line-height: var(--special-line-height);
+    text-transform: capitalize;
+    margin-bottom: 8px;
+
+    @include from-sm {
+      font-size: calc(var(--special-font-size) - 8px);
+    }
+
+    @include from-md {
+      font-size: calc(var(--special-font-size) - 6px);
+      margin-bottom: 10px;
+    }
+
+    @include from-xl {
+      font-size: calc(var(--special-font-size) - 5px);
+    }
+
+    @include from-2xl {
+      font-size: calc(var(--special-font-size) - 4px);
+    }
+
+    @include from-3xl {
+      font-size: var(--special-font-size);
+    }
+  }
+
+  h1 {
+    color: currentColor;
+    line-height: 1.4;
+    margin: 0;
+    word-break: break-word;
+  }
+
+  .borobazar-breadcrumb {
+    margin-top: 14px;
+
+    @include from-sm {
+      margin-top: 18px;
+    }
+
+    @include from-md {
+      margin-top: 20px;
+    }
+
+    @include from-3xl {
+      margin-top: 24px;
+    }
+
+    a {
+      color: currentColor;
+      text-decoration: none;
+      transition: opacity 0.2s ease;
+
+      &:hover,
+      &:focus {
+        opacity: 1;
+      }
+    }
+
+    a,
+    svg {
+      opacity: 0.7;
+    }
+
+    &-home-icon {
+      svg {
+        margin-top: -1px;
+      }
+    }
+
+    span:last-child {
+      word-break: break-word;
+    }
+  }
+}

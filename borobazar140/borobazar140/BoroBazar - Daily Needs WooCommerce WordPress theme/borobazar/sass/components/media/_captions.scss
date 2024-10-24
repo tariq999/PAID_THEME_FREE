@@ -1,0 +1,32 @@
+.wp-caption {
+  max-width: 100%;
+  margin-bottom: 2em;
+
+  @include from-md {
+    margin-bottom: 2.4em;
+  }
+
+  @include from-lg {
+    margin-bottom: 2.6em;
+  }
+
+  img[class*="wp-image-"] {
+
+    @include center-block;
+  }
+
+  .wp-caption-dd,
+  .wp-caption-text {
+    margin: 0.8075em 0;
+    color: var(--color-lighter-text);
+    font-size: calc(var(--body-font-size) - 2px);
+
+    @include from-md {
+      font-size: calc(var(--body-font-size) - 1px);
+    }
+  }
+}
+
+.wp-caption-text {
+  text-align: center;
+}

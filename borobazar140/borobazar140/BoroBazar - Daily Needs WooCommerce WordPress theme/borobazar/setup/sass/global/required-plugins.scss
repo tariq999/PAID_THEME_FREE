@@ -1,0 +1,16 @@
+.redq-setup-wizard-plugins {
+  .rsw-plugin-activate {
+    .loader {
+      &.show {
+        display: inline-block;
+      }
+    }
+  }
+  .rsw-plugin-activate-all {
+    .loader {
+      &.show {
+        display: inline-block;
+      }
+    }
+  }
+}

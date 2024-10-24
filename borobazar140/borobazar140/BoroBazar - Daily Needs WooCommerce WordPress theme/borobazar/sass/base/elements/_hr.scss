@@ -1,0 +1,14 @@
+hr {
+  background-color: var(--color-border-main);
+  border: 0;
+  height: 1px;
+  margin-bottom: 2em;
+
+  @include from-md {
+    margin-bottom: 2.4em;
+  }
+
+  @include from-lg {
+    margin-bottom: 2.6em;
+  }
+}

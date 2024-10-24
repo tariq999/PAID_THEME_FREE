@@ -1,0 +1,28 @@
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+  color: var(--color-dark-text);
+  font-family: var(--body-font-family);
+  line-height: var(--body-line-height);
+  font-size: calc(var(--body-font-size) - 1px);
+
+  @include from-md {
+    font-size: var(--body-font-size);
+  }
+}
+
+// fix editor content line height issue
+.mce-content-body {
+  line-height: var(--body-line-height);
+
+  *[data-mce-selected="inline-boundary"] {
+    background: #d0f6ef;
+  }
+}
+
+@import "headings";
+@import "gutenberg-typo";
+@import "copy";

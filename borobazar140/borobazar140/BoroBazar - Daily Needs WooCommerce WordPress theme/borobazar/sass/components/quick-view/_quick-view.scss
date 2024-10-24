@@ -1,0 +1,331 @@
+// modal styles
+#redq-quick-view-modal {
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+
+  @include from-sm {
+    margin-top: 10px;
+    border-radius: $size__main-radius + 2px;
+  }
+
+  .close-modal {
+    display: none;
+
+    @media (min-width: 991px) {
+      top: 15px;
+      right: 15px;
+      background-size: 18px;
+      background-image: url("data:image/svg+xml,%0A%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17.5002 15.9995L11.5001 9.99936L17.5004 3.9991C17.9143 3.58517 17.9143 2.91306 17.5002 2.499C17.0863 2.08508 16.4142 2.08508 16.0003 2.499L10 8.49926L3.99974 2.499C3.58582 2.08508 2.9137 2.08508 2.49978 2.499C2.08572 2.91306 2.08572 3.58517 2.49964 3.9991L8.4999 9.99936L2.49978 15.9995C2.08572 16.4135 2.08572 17.0857 2.49964 17.4996C2.9137 17.9136 3.58582 17.9136 3.99988 17.4996L10 11.4995L16.0001 17.4996C16.4142 17.9136 17.0863 17.9136 17.5004 17.4996C17.9143 17.0857 17.9143 16.4135 17.5002 15.9995Z' fill='%238C969F' stroke='%238C969F' stroke-width='0.3'/%3E%3C/svg%3E%0A");
+      transition: all 0.2s ease;
+      overflow: hidden;
+
+      &:hover,
+      &:focus {
+        background-image: url("data:image/svg+xml,%0A%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17.5002 15.9995L11.5001 9.99936L17.5004 3.9991C17.9143 3.58517 17.9143 2.91306 17.5002 2.499C17.0863 2.08508 16.4142 2.08508 16.0003 2.499L10 8.49926L3.99974 2.499C3.58582 2.08508 2.9137 2.08508 2.49978 2.499C2.08572 2.91306 2.08572 3.58517 2.49964 3.9991L8.4999 9.99936L2.49978 15.9995C2.08572 16.4135 2.08572 17.0857 2.49964 17.4996C2.9137 17.9136 3.58582 17.9136 3.99988 17.4996L10 11.4995L16.0001 17.4996C16.4142 17.9136 17.0863 17.9136 17.5004 17.4996C17.9143 17.0857 17.9143 16.4135 17.5002 15.9995Z' fill='%23000000' stroke='%23000000' stroke-width='0.3'/%3E%3C/svg%3E%0A");
+      }
+    }
+  }
+
+  &.product-loaded {
+    width: 100%;
+    max-width: 1360px;
+    padding: 24px 16px 68px;
+    background: #ffffff;
+    box-shadow: 0px 25px 40px rgba(41, 50, 68, 0.25);
+
+    @include from-sm {
+      width: 98%;
+      padding: 30px 24px 28px;
+      border-radius: $size__main-radius;
+    }
+
+    @include from-md {
+      width: 90%;
+    }
+
+    @include from-xl {
+      padding: 50px 40px 42px;
+    }
+
+    .close-modal {
+      display: block;
+
+      @media (max-width: 639px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        top: auto;
+        text-indent: 0;
+        background: var(--color-border-lighter);
+        left: 0;
+        z-index: 1;
+        height: 44px;
+        text-decoration: none;
+        font-weight: 500;
+        border-top: 1px solid var(--color-border-main);
+        transition: background 0.2s ease-in-out;
+
+        &:hover,
+        &:focus {
+          color: var(--color-main-text);
+          background: var(--color-border-light);
+        }
+      }
+    }
+
+    .redq-quick-view-modal-loader {
+      display: none;
+    }
+  }
+}
+
+.redq-quick-view-modal-blocker {
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1490;
+
+  @include from-sm {
+    padding: 20px;
+  }
+
+  // modal loader styles
+  .redq-quick-view-modal-loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      width: 48px;
+      height: auto;
+
+      path {
+        fill: #ffffff;
+      }
+    }
+  }
+
+  div.product {
+    div.images,
+    div.summary {
+      width: 100%;
+      margin-bottom: 0;
+    }
+
+    div.images {
+      aspect-ratio: 4 / 3.8;
+
+      @media (min-width: 991px) {
+        width: calc(58% - 16px);
+      }
+
+      @include from-xl {
+        width: calc(58% - 20px);
+      }
+    }
+
+    div.summary {
+      @media (min-width: 991px) {
+        width: calc(42% - 16px);
+      }
+
+      @include from-xl {
+        width: calc(42% - 20px);
+      }
+    }
+
+    div.entry-summary {
+      @media (max-width: 990px) {
+        margin-top: 2em;
+      }
+
+      .summary-content {
+        margin-bottom: 0;
+      }
+
+      form.cart {
+        .quantity-btn-wrapper {
+          max-width: 150px;
+        }
+
+        .single_add_to_cart_button {
+          &::before,
+          &::after {
+            content: none;
+          }
+
+          &.loading {
+            .flex {
+              display: none;
+            }
+
+            .borobazar-loader {
+              display: flex;
+            }
+          }
+
+          .borobazar-loader {
+            span {
+              background-color: #ffffff;
+            }
+          }
+        }
+
+        .added_to_cart {
+          text-decoration: none;
+          padding: 0.5em;
+          border-radius: $size__main-radius;
+          border: 1px solid var(--color-border-main);
+          align-items: center;
+          display: flex;
+          justify-content: center;
+
+          @include from-sm {
+            min-height: 48px;
+          }
+
+          &:hover,
+          &:focus {
+            color: var(--color-main-text);
+            background-color: var(--color-bg);
+          }
+        }
+      }
+    }
+  }
+
+  .product-after-summery {
+    overflow: hidden;
+    width: calc(100% + 20px);
+    margin-left: -10px;
+    margin-right: -10px;
+    padding: 0 10px 10px;
+    padding-bottom: 0.5rem;
+
+    h2 {
+      text-align: left;
+      font-size: calc(var(--h3-font-size) - 4px);
+
+      @include from-sm {
+        font-size: calc(var(--h3-font-size) - 2px);
+      }
+
+      @include from-xl {
+        font-size: var(--h3-font-size);
+      }
+    }
+
+    section {
+      margin-top: 2.5rem;
+
+      .woocommerce-loop-product__title {
+        margin: 0px;
+        font-family: var(--body-font-family, 'Inter');
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        font-weight: 400;
+        line-height: 1.5rem;
+        color: inherit;
+
+        @include from-sm {
+          font-size: 0.9375rem;
+        }
+      }
+    }
+
+    .borobozar-product-grid-alpine {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+
+      @include from-md {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      @include from-lg {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+
+      @include from-xl {
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        gap: 1.25rem;
+      }
+    }
+
+    .borobozar-product-grid-oak {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+
+      @include from-lg {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      @include from-xl {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 1.25rem;
+      }
+
+      @include from-3xl {
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+      }
+    }
+
+    .borobozar-product-grid-maple {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+
+      @include from-md {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        .borobazar-maple-product-card {
+          @apply gap-3 grid-cols-[120px,1fr];
+        }
+        .borobazar-maple-product-card-thumb {
+          @apply h-32;
+        }
+        .borobazar-maple-product-card-meta {
+          @apply py-0;
+        }
+      }
+
+      @include from-lg {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        .borobazar-maple-product-card {
+          @apply grid-cols-[180px,1fr];
+        }
+        .borobazar-maple-product-card-thumb {
+          @apply h-48;
+        }
+        .borobazar-maple-product-card-meta {
+          @apply py-[18px];
+        }
+      }
+
+      @include from-xl {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1.25rem;
+        .borobazar-maple-product-card {
+          @apply gap-4 grid-cols-[130px,1fr];
+        }
+        .borobazar-maple-product-card-thumb {
+          @apply h-36;
+        }
+      }
+
+      @include from-3xl {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        .borobazar-maple-product-card {
+          @apply grid-cols-[150px,1fr];
+        }
+        .borobazar-maple-product-card-thumb {
+          @apply h-48;
+        }
+      }
+
+      @include from-4xl {
+        .borobazar-maple-product-card {
+          @apply grid-cols-[180px,1fr];
+        }
+      }
+    }
+  }
+}

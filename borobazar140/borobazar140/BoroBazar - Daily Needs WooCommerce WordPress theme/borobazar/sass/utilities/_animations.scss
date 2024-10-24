@@ -1,0 +1,27 @@
+@keyframes scale-out {
+  75%,
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+@keyframes anim-pulse {
+  0%,
+  80%,
+  100% {
+    transform: scale(0);
+  }
+
+  40% {
+    transform: scale(1);
+  }
+}
+
+@keyframes checked {
+  75%,
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}

@@ -1,0 +1,156 @@
+blockquote,
+.wp-block-quote,
+.wp-block-quote.is-style-large {
+  border: 0;
+  padding: 0;
+  padding-top: 2.34em;
+  padding-bottom: 2.34em;
+  border-top: 1px solid var(--color-border-main);
+  border-bottom: 1px solid var(--color-border-main);
+  position: relative;
+  margin-bottom: 2em;
+
+  @include from-md {
+    padding-top: 3em;
+    margin-bottom: 2.4em;
+  }
+
+  @include from-lg {
+    margin-bottom: 2.6em;
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    background-image: url("data:image/svg+xml,%3Csvg width='80' height='56' viewBox='0 0 80 56' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18.75 55.9688C29.0887 55.9688 37.5 47.5575 37.5 37.2187C37.5 32.2748 35.5925 27.6098 32.1291 24.083C28.6733 20.5641 24.0573 18.572 19.1308 18.4736L18.9877 18.47C17.2605 18.418 15.8273 19.7873 15.7823 21.5126C15.7373 23.238 17.0997 24.673 18.825 24.718L18.998 24.7223C25.7538 24.853 31.25 30.4592 31.25 37.2187C31.25 44.1112 25.6425 49.7187 18.75 49.7187C11.8575 49.7187 6.25 44.1112 6.25 37.2187C6.25 28.6097 8.2975 20.6656 12.3361 13.607C15.3544 8.33124 18.4237 5.54452 18.4811 5.49296C19.7683 4.3503 19.8892 2.3803 18.7495 1.08858C18.1319 0.388741 17.2705 0.0310822 16.405 0.0310822C15.6705 0.0312386 14.9328 0.288738 14.3388 0.812958C14.1877 0.946396 10.5972 4.14874 7.06281 10.2403C3.84063 15.7934 0 24.9819 0 37.2187C0 47.5577 8.41125 55.9688 18.75 55.9688Z' fill='%23D8DEE3'/%3E%3Cpath d='M61.25 55.9688C71.5887 55.9688 80 47.5577 80 37.2188C80 32.2748 78.0925 27.6098 74.6291 24.0827C71.1733 20.5637 66.5573 18.5719 61.6308 18.4733L61.4877 18.4697C59.7642 18.4177 58.3272 19.787 58.2823 21.5123C58.2373 23.2377 59.5997 24.6727 61.325 24.7177L61.498 24.722C68.2537 24.853 73.75 30.4592 73.75 37.2188C73.75 44.1112 68.1425 49.7188 61.25 49.7188C54.3575 49.7188 48.75 44.1112 48.75 37.2188C48.75 28.6097 50.7975 20.6656 54.8361 13.6072C57.8544 8.33141 60.9237 5.54469 60.9811 5.49313C62.2684 4.35031 62.3892 2.38047 61.2495 1.08875C60.6319 0.388752 59.7705 0.03125 58.905 0.03125C58.1705 0.03125 57.4328 0.28875 56.8386 0.812965C56.6877 0.946404 53.097 4.14875 49.5627 10.2403C46.3406 15.7934 42.5 24.9817 42.5 37.2188C42.5 47.5577 50.9113 55.9688 61.25 55.9688Z' fill='%23D8DEE3'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    z-index: 0;
+    width: 60px;
+    height: 42px;
+
+    @include from-md {
+      width: 80px;
+      height: 56px;
+    }
+  }
+
+  &.has-text-align-right {
+    border-right: 0;
+    padding-right: 0;
+
+    &::before {
+      left: auto;
+      right: 0;
+      transform: rotateY(180deg);
+    }
+  }
+
+  p {
+    color: var(--h4-color);
+    font-style: inherit;
+    font-weight: 500;
+    line-height: 1.9;
+    margin-bottom: 0.6em;
+    position: relative;
+    z-index: 1;
+
+    cite {
+      margin-top: 0.6em;
+    }
+  }
+
+  cite {
+    display: block;
+    font-style: italic;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+// blockquote variant styles
+blockquote,
+.wp-block-quote {
+
+  &::before {
+    top: 14px;
+  }
+
+  p {
+    font-size: var(--h4-font-size);
+  }
+
+  cite {
+    font-size: calc(var(--body-font-size) - 1px);
+  }
+
+  &.is-style-large {
+    &::before {
+      top: 18px;
+    }
+
+    p {
+      font-size: calc(var(--h4-font-size) + 3px);
+    }
+
+    cite {
+      font-size: calc(var(--body-font-size) + 1px);
+    }
+  }
+}
+
+// pullquote styles
+.wp-block-pullquote {
+  padding: 2.6em 0;
+
+  blockquote {
+    margin: 0;
+    border: 0;
+
+    &::before {
+      top: 22px;
+    }
+
+    cite {
+      font-size: var(--body-font-size);
+    }
+  }
+
+  &.is-style-solid-color {
+    blockquote {
+      max-width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+
+      p {
+        margin-bottom: 0.6em;
+      }
+
+      &::before {
+        top: 24px;
+      }
+    }
+
+    &.has-background {
+      blockquote {
+        &::before {
+          opacity: 0.6;
+        }
+      }
+    }
+  }
+}
+
+// exception handel 
+blockquote[cite*="blockquote"] {
+  &::before {
+    top: 23px;
+  }
+}
+
+p q {
+  color: var(--h4-color);
+  font-size: var(--h4-font-size);
+  font-weight: 500;
+}

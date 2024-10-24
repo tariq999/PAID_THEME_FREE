@@ -1,0 +1,283 @@
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+.wp-block-search .wp-block-search__input,
+#add_payment_method table.cart td.actions .coupon .input-text,
+.woocommerce-cart table.cart td.actions .coupon .input-text,
+.woocommerce-checkout table.cart td.actions .coupon .input-text,
+textarea {
+  max-width: 100%;
+  color: var(--color-main-text);
+  min-height: 45px;
+  padding: 8px 16px;
+  border-radius: $size__main-radius;
+  border: 1px solid var(--color-border-main);
+  transition: all 0.2s ease;
+
+  @include from-sm {
+    min-height: 48px;
+  }
+
+  &:hover {
+    border-color: var(--color-brand);
+  }
+
+  &:focus {
+    outline: none;
+    border-color: var(--color-brand);
+    box-shadow: 0 0 0 1px var(--color-brand);
+  }
+
+  &+span {
+    em {
+      font-size: calc(var(--body-font-size) - 1px);
+    }
+  }
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+label {
+  color: var(--color-main-text);
+  margin-bottom: 4px;
+}
+
+textarea,
+.woocommerce form .form-row textarea {
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  height: 140px;
+
+  @include from-lg {
+    height: 200px;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 1px var(--color-brand);
+  }
+
+  &.editor-post-title__input {
+    height: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    &:hover {
+      border-color: #ffffff;
+    }
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}
+
+select {
+  height: 45px;
+  max-width: 100%;
+  cursor: pointer;
+  text-overflow: ellipsis;
+  padding-left: 15px;
+  padding-right: 28px;
+  border-radius: $size__main-radius;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.99997 5.85018C4.82075 5.85018 4.64155 5.78175 4.50492 5.64518L0.205141 1.34536C-0.0683805 1.07184 -0.0683805 0.628372 0.205141 0.354961C0.478553 0.0815496 0.921933 0.0815496 1.19548 0.354961L4.99997 4.15968L8.80449 0.355094C9.07801 0.0816825 9.52135 0.0816825 9.79474 0.355094C10.0684 0.628505 10.0684 1.07197 9.79474 1.34549L5.49503 5.64531C5.35832 5.78191 5.17913 5.85018 4.99997 5.85018Z' fill='%238C969F'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: 12px;
+  background-position: calc(100% - 14px) center;
+  border: 1px solid var(--color-border-main);
+  transition: all 0.2s ease;
+
+  @include from-sm {
+    height: 48px;
+  }
+
+  &:hover {
+    border-color: var(--color-brand);
+  }
+
+  &:focus {
+    outline: none;
+    border-color: var(--color-brand);
+    box-shadow: 0 0 0 1px var(--color-brand);
+  }
+}
+
+// select-2
+.borobazar,
+.borobazar-woo {
+  .select2-container {
+
+    .select2-selection--single,
+    .select2-selection--multiple {
+      height: 45px;
+      text-align: left;
+      border-color: var(--color-border-main);
+      border-radius: $size__main-radius;
+      outline: none;
+
+      @include from-sm {
+        height: 48px;
+      }
+
+      .select2-selection__rendered {
+        color: var(--color-main-text);
+        padding-left: 16px;
+        padding-right: 32px;
+        line-height: 45px;
+
+        @include from-sm {
+          line-height: 48px;
+        }
+      }
+
+      .select2-selection__arrow {
+        width: 32px;
+        height: 100%;
+
+        b {
+          left: 41%;
+        }
+      }
+
+      .select2-selection__clear {
+        line-height: 2.9;
+      }
+    }
+
+    &.select2-container--focus {
+
+      .select2-selection--single,
+      .select2-selection--multiple {
+        border-color: var(--color-brand);
+        box-shadow: 0 0 0 1px var(--color-brand);
+      }
+    }
+
+    &--default {
+      .select2-dropdown {
+        border-color: var(--color-border-main);
+      }
+
+      .select2-search--dropdown {
+        padding: 4px 8px 6px;
+
+        .select2-search__field {
+          border-color: var(--color-border-main);
+        }
+      }
+
+      .select2-results__option {
+        color: var(--color-main-text);
+        padding: 6px 10px;
+        outline: none;
+        transition: background-color 0.2s ease;
+      }
+
+      .select2-results__option[aria-selected=true],
+      .select2-results__option[data-selected=true] {
+        background-color: var(--color-bg);
+      }
+
+      .select2-results__option--highlighted[aria-selected],
+      .select2-results__option--highlighted[data-selected] {
+        color: #ffffff;
+        background-color: var(--color-brand);
+      }
+    }
+
+    // multiple fixing
+    .select2-selection--multiple {
+      .select2-selection__rendered {
+        li {
+          line-height: 2;
+          margin: 8px 8px 0 0;
+          border-color: var(--color-border-main);
+          background: var(--color-bg);
+          font-size: calc(var(--body-font-size) - 1px);
+
+          &.select2-search--inline {
+            margin-top: 0;
+            background: transparent;
+          }
+        }
+      }
+    }
+  }
+}
+
+// woo input
+.woocommerce,
+.woocommerce-page,
+.woocommerce #content,
+.woocommerce-page #content {
+  table.cart td.actions .input-text {
+    width: auto;
+  }
+}
+
+// wpcf-7 
+.wpcf7-form {
+  p:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.wpcf7-form-control {
+  width: 100%;
+
+  &.wpcf7-submit {
+    width: auto;
+  }
+}
+
+.wpcf7-select {
+  width: 100%;
+
+  &[multiple="multiple"] {
+    height: auto;
+  }
+}
+
+.wpcf7-form-control-wrap {
+  display: block;
+  margin-top: 4px;
+
+  &[class*='file'] {
+    display: block;
+    padding: 16px;
+    background-color: var(--color-bg);
+    border: 1px dashed var(--color-lightest-text);
+    border-radius: $size__main-radius;
+  }
+
+  .wpcf7-range {
+    padding: 0;
+
+    &:focus {
+      border: 0;
+      box-shadow: none;
+    }
+  }
+
+  .wpcf7-file {
+    &:focus-visible {
+      outline: none;
+      opacity: 0.7;
+    }
+  }
+}

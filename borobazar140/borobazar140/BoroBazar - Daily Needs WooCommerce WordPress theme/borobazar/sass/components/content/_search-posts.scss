@@ -1,0 +1,29 @@
+.search-results {
+  article[class*='post-'] {
+    .entry-media {
+      align-self: flex-start;
+      width: 100%;
+
+      @include from-sm {
+        flex-basis: 520px;
+        max-width: 45%;
+      }
+    }
+
+    @include from-sm {
+      .post-thumbnail {
+        width: 100%;
+
+        img {
+          object-fit: cover;
+          width: 100%;
+          max-height: 380px;
+        }
+      }
+    }
+
+    .entry-post-content {
+      flex: 1;
+    }
+  }
+}

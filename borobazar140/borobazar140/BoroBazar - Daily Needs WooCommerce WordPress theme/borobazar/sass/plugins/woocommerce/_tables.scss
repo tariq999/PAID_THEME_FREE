@@ -1,0 +1,220 @@
+table.shop_table_responsive {
+  thead {
+    display: none;
+  }
+
+  tbody {
+    th {
+      display: none;
+    }
+  }
+
+  tr {
+    td {
+      display: block;
+      text-align: right;
+      clear: both;
+
+      &::before {
+        content: attr(data-title) ": ";
+        float: left;
+      }
+
+      &.product-remove {
+        a {
+          text-align: left;
+        }
+
+        &::before {
+          display: none;
+        }
+      }
+
+      &.product-quantity {
+        .quantity {
+          margin-left: auto;
+        }
+      }
+
+      &.actions,
+      &.download-actions {
+        &::before {
+          display: none;
+        }
+      }
+
+      &.download-actions {
+        .button {
+          display: block;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@include from-lg {
+  table.shop_table_responsive {
+    thead {
+      display: table-header-group;
+    }
+
+    tbody {
+      th {
+        display: table-cell;
+      }
+    }
+
+    tr {
+      th,
+      td {
+        text-align: left;
+      }
+
+      td {
+        display: table-cell;
+
+        &::before {
+          display: none;
+        }
+
+        &.product-quantity {
+          .quantity {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+// shop table responsive when layout has sidebar
+.site-wrapper-with-sidebar {
+  table.shop_table_responsive {
+    thead {
+      display: none;
+    }
+  
+    tbody {
+      th {
+        display: none;
+      }
+    }
+  
+    tr {
+      td {
+        display: block;
+        text-align: right;
+        clear: both;
+  
+        &::before {
+          content: attr(data-title) ": ";
+          float: left;
+        }
+  
+        &.product-remove {
+          a {
+            text-align: left;
+          }
+  
+          &::before {
+            display: none;
+          }
+        }
+  
+        &.product-quantity {
+          .quantity {
+            margin-left: auto;
+          }
+        }
+  
+        &.actions,
+        &.download-actions {
+          &::before {
+            display: none;
+          }
+        }
+  
+        &.download-actions {
+          .button {
+            display: block;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+
+  @include from-xl {
+    table.shop_table_responsive {
+      thead {
+        display: table-header-group;
+      }
+  
+      tbody {
+        th {
+          display: table-cell;
+        }
+      }
+  
+      tr {
+        th,
+        td {
+          text-align: left;
+        }
+  
+        td {
+          display: table-cell;
+  
+          &::before {
+            display: none;
+          }
+  
+          &.product-quantity {
+            .quantity {
+              margin-left: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+// design conflict fix with base theme table styles
+.entry-content {
+  .woocommerce {
+    table.shop_table {
+      tbody th,
+      tfoot td,
+      tfoot th {
+        border-top: 0;
+
+        &:first-of-type {
+          border-top-left-radius: 0;
+        }
+
+        &:last-of-type {
+          border-top-right-radius: 0;
+        }
+      }
+    }
+  }
+}
+
+#add_payment_method,
+.woocommerce-cart,
+.woocommerce-checkout {
+  .cart-collaterals {
+    .cart_totals {
+      tr {
+
+        th,
+        td {
+          border-top: 0;
+        }
+      }
+    }
+  }
+}

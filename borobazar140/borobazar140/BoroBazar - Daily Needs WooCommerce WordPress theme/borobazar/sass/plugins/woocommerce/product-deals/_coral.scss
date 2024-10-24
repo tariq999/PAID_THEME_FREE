@@ -1,0 +1,30 @@
+.borobazar-product-deal-coral {
+  &-thumbnail {
+    img {
+      @apply opacity-100 object-contain h-full;
+    }
+
+    .thumb-1 {
+      opacity: 0;
+      transition: 0.25s ease-in-out;
+    }
+
+    &:hover {
+      .thumb-1 {
+        @apply opacity-100 z-1;
+      }
+    }
+  }
+
+  &-price {
+    @apply flex flex-row-reverse justify-center items-center mb-2;
+
+    del {
+      @apply text-disabled font-normal ml-2.5 text-lg;
+    }
+
+    ins {
+      @apply bg-transparent border-0 rounded-none p-0 text-2xl font-semibold;
+    }
+  }
+}

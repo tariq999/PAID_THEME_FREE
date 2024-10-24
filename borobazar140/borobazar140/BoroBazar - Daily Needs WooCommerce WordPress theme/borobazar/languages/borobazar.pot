@@ -1,0 +1,1826 @@
+# Copyright (C) 2023 RedQ Team
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: BoroBazar 1.3.9\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/borobazar\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2023-12-11T04:28:39+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.8.1\n"
+"X-Domain: borobazar\n"
+
+#. Theme Name of the theme
+msgid "BoroBazar"
+msgstr ""
+
+#. Theme URI of the theme
+msgid "https://redq.io/borobazar-wp"
+msgstr ""
+
+#. Description of the theme
+msgid "BoroBazar WordPress E-Commerce Theme is perfect for increasing your sales, turnover and profits. This attractive-but-packed WooCommerce theme is literally the best E-Commerce theme for your next business"
+msgstr ""
+
+#. Author of the theme
+msgid "RedQ Team"
+msgstr ""
+
+#. Author URI of the theme
+msgid "http://redq.io"
+msgstr ""
+
+#: 404.php:23
+#: 404.php:45
+msgid "404"
+msgstr ""
+
+#: 404.php:46
+msgid "We are sorry! This page is currently unavailable. We request you to try again later."
+msgstr ""
+
+#: archive.php:93
+#: framework/inc/template-functions.php:195
+#: index.php:77
+#: search.php:91
+msgid "Previous"
+msgstr ""
+
+#: archive.php:94
+#: framework/inc/template-functions.php:208
+#: index.php:78
+#: search.php:92
+msgid "Next"
+msgstr ""
+
+#. translators: 1: title.
+#: comments.php:36
+msgid "One thought on &ldquo;%1$s&rdquo;"
+msgstr ""
+
+#. translators: 1: comment count number, 2: title.
+#: comments.php:42
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:71
+msgid "Comments are closed."
+msgstr ""
+
+#: framework/admin/AdminMenu.php:72
+#: framework/admin/AdminMenu.php:73
+msgid "Theme Requirements"
+msgstr ""
+
+#: framework/admin/AdminMenu.php:81
+#: framework/admin/AdminMenu.php:82
+#: setup/Hooks.php:62
+msgid "Plugins"
+msgstr ""
+
+#: framework/admin/AdminMenu.php:90
+#: framework/admin/AdminMenu.php:91
+#: setup/Admin/Menu.php:105
+#: setup/Admin/Menu.php:106
+#: setup/Traits/SetupTrait.php:536
+msgid "FAQs"
+msgstr ""
+
+#: framework/admin/AdminMenu.php:100
+#: framework/admin/AdminMenu.php:101
+msgid "Demos"
+msgstr ""
+
+#: framework/admin/AdminMenu.php:170
+#: framework/helpers/class-tgm-plugin-activation.php:2922
+msgid "Install"
+msgstr ""
+
+#: framework/admin/AdminMenu.php:191
+#: framework/helpers/class-tgm-plugin-activation.php:2931
+msgid "Activate"
+msgstr ""
+
+#: framework/admin/AdminMenu.php:208
+#: framework/helpers/class-tgm-plugin-activation.php:2928
+msgid "Update"
+msgstr ""
+
+#: framework/admin/AdminMenu.php:229
+msgid "Deactivate"
+msgstr ""
+
+#: framework/admin/AdminMenu.php:291
+msgid "Search Page"
+msgstr ""
+
+#: framework/admin/Importer.php:55
+#: framework/admin/Importer.php:56
+msgid "BoroBazar Demos"
+msgstr ""
+
+#: framework/admin/Importer.php:76
+msgid "BoroBazar Demo Importer"
+msgstr ""
+
+#: framework/admin/Importer.php:98
+msgid "Description"
+msgstr ""
+
+#: framework/admin/Importer.php:100
+msgid "When you import the data, the following things might happen : "
+msgstr ""
+
+#: framework/admin/Importer.php:104
+msgid "1. No existing posts, pages, categories, images, custom post types or any other data will be deleted or modified."
+msgstr ""
+
+#: framework/admin/Importer.php:107
+msgid "2. Posts, pages, images, widgets, menus and other theme settings will get imported."
+msgstr ""
+
+#: framework/admin/Importer.php:111
+msgid "3. Please click on the Import button only once and wait, it can take a couple of minutes."
+msgstr ""
+
+#: framework/admin/Importer.php:184
+#: setup/Traits/SetupTrait.php:223
+msgid "Classic demo data is ready to import."
+msgstr ""
+
+#: framework/admin/Importer.php:194
+#: setup/Traits/SetupTrait.php:233
+msgid "Vintage demo data is ready to import."
+msgstr ""
+
+#: framework/admin/Importer.php:204
+#: setup/Traits/SetupTrait.php:243
+msgid "Modern demo data is ready to import."
+msgstr ""
+
+#: framework/admin/Importer.php:214
+#: setup/Traits/SetupTrait.php:253
+msgid "Minimal demo data is ready to import."
+msgstr ""
+
+#: framework/admin/Importer.php:224
+#: setup/Traits/SetupTrait.php:263
+msgid "Standard demo data is ready to import."
+msgstr ""
+
+#: framework/admin/Importer.php:234
+#: setup/Traits/SetupTrait.php:273
+msgid "Trendy demo data is ready to import."
+msgstr ""
+
+#: framework/admin/Importer.php:244
+#: setup/Traits/SetupTrait.php:283
+msgid "Elegant demo data is ready to import."
+msgstr ""
+
+#: framework/admin/Plugins.php:34
+#: setup/Traits/SetupTrait.php:37
+msgid "BoroBazar Theme Helper"
+msgstr ""
+
+#: framework/admin/Plugins.php:46
+#: setup/Traits/SetupTrait.php:50
+msgid "GridSter - WooCommerce, Gutenberg Grid Plugin"
+msgstr ""
+
+#: framework/admin/Plugins.php:59
+#: setup/Traits/SetupTrait.php:64
+msgid "RedQ Reuse Form"
+msgstr ""
+
+#: framework/admin/Plugins.php:71
+#: setup/Traits/SetupTrait.php:78
+msgid "FireMobile - Firebase Mobile Authentication"
+msgstr ""
+
+#: framework/admin/Plugins.php:84
+#: setup/Traits/SetupTrait.php:92
+msgid "Load Google Map"
+msgstr ""
+
+#: framework/admin/Plugins.php:96
+#: setup/Traits/SetupTrait.php:105
+msgid "RedQ WooCommerce Quick View"
+msgstr ""
+
+#: framework/admin/Plugins.php:108
+#: setup/Traits/SetupTrait.php:118
+msgid "WooCommerce - excelling eCommerce"
+msgstr ""
+
+#: framework/admin/Plugins.php:118
+#: setup/Traits/SetupTrait.php:129
+msgid "Kirki Customizer Framework"
+msgstr ""
+
+#: framework/admin/Plugins.php:129
+#: setup/Traits/SetupTrait.php:141
+msgid "Contact Form 7"
+msgstr ""
+
+#: framework/admin/Plugins.php:139
+#: setup/Traits/SetupTrait.php:152
+msgid "One Click Demo Importer"
+msgstr ""
+
+#: framework/admin/Plugins.php:149
+#: setup/Traits/SetupTrait.php:163
+msgid "Cookie Notice for GDPR & CCPA"
+msgstr ""
+
+#: framework/admin/Plugins.php:160
+#: setup/Traits/SetupTrait.php:175
+msgid "Safe SVG"
+msgstr ""
+
+#: framework/admin/Plugins.php:170
+#: setup/Traits/SetupTrait.php:186
+msgid "Variation Swatches for WooCommerce"
+msgstr ""
+
+#: framework/admin/Plugins.php:181
+#: setup/Traits/SetupTrait.php:198
+msgid "Nextend Social Login and Register"
+msgstr ""
+
+#: framework/BoroBazar.php:69
+msgid "BoroBazar Main Menu"
+msgstr ""
+
+#: framework/BoroBazar.php:94
+msgctxt "Name of the small font size in the block editor"
+msgid "Small"
+msgstr ""
+
+#: framework/BoroBazar.php:95
+msgctxt "Short name of the small font size in the block editor."
+msgid "S"
+msgstr ""
+
+#: framework/BoroBazar.php:100
+msgctxt "Name of the regular font size in the block editor"
+msgid "Regular"
+msgstr ""
+
+#: framework/BoroBazar.php:101
+msgctxt "Short name of the regular font size in the block editor."
+msgid "M"
+msgstr ""
+
+#: framework/BoroBazar.php:106
+msgctxt "Name of the large font size in the block editor"
+msgid "Large"
+msgstr ""
+
+#: framework/BoroBazar.php:107
+msgctxt "Short name of the large font size in the block editor."
+msgid "L"
+msgstr ""
+
+#: framework/BoroBazar.php:112
+msgctxt "Name of the larger font size in the block editor"
+msgid "Larger"
+msgstr ""
+
+#: framework/BoroBazar.php:113
+msgctxt "Short name of the larger font size in the block editor."
+msgid "XL"
+msgstr ""
+
+#: framework/BoroBazar.php:186
+msgid "BoroBazar - Blog Sidebar"
+msgstr ""
+
+#: framework/BoroBazar.php:188
+msgid "Add widgets here."
+msgstr ""
+
+#: framework/BoroBazar.php:197
+msgid "BoroBazar - WooCommerce Page Sidebar"
+msgstr ""
+
+#: framework/BoroBazar.php:199
+msgid "Add sidebar widgets to WooCommerce pages (e.g. Product single, Cart, My account)."
+msgstr ""
+
+#: framework/BoroBazar.php:209
+msgid "BoroBazar - WooCommerce Shop Sidebar"
+msgstr ""
+
+#: framework/BoroBazar.php:211
+msgid "Add sidebar widgets to WooCommerce Shop page only."
+msgstr ""
+
+#: framework/client/BoroBazarCommerce.php:109
+msgid "Mini Cart"
+msgstr ""
+
+#: framework/client/BoroBazarCommerce.php:116
+msgid "Shopping Cart"
+msgstr ""
+
+#: framework/client/MenuWalker.php:326
+msgid "Add a menu"
+msgstr ""
+
+#. translators: %d: ID of a post.
+#: framework/client/PageWalker.php:152
+msgid "#%d (no title)"
+msgstr ""
+
+#: framework/helpers/class-kirki-installer-section.php:102
+msgid "Please install the Kirki plugin to take full advantage of this theme's customizer capabilities"
+msgstr ""
+
+#: framework/helpers/class-kirki-installer-section.php:106
+msgid "Install Kirki Toolkit now"
+msgstr ""
+
+#: framework/helpers/class-kirki-installer-section.php:107
+msgid "Install Now"
+msgstr ""
+
+#: framework/helpers/class-kirki-installer-section.php:123
+msgid "You have installed Kirki. Activate it to take advantage of this theme's features in the customizer."
+msgstr ""
+
+#: framework/helpers/class-kirki-installer-section.php:127
+msgid "Activate Kirki Toolkit now"
+msgstr ""
+
+#: framework/helpers/class-kirki-installer-section.php:128
+msgid "Activate Now"
+msgstr ""
+
+#: framework/helpers/class-kirki-installer-section.php:148
+#: framework/helpers/class-kirki-installer-section.php:150
+msgid "Don't show this again"
+msgstr ""
+
+#: framework/helpers/class-kirki-installer-section.php:149
+msgid "Dismiss"
+msgstr ""
+
+#: framework/helpers/class-kirki-installer-section.php:161
+msgid "Are you sure? Dismissing this message will hide the installation recommendation and you will have to manually install and activate the plugin in the future."
+msgstr ""
+
+#: framework/helpers/class-tgm-plugin-activation.php:338
+#: framework/helpers/class-tgm-plugin-activation.php:339
+msgid "BoroBazar Required Plugins"
+msgstr ""
+
+#. translators: %s: plugin name.
+#: framework/helpers/class-tgm-plugin-activation.php:341
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#. translators: %s: plugin name.
+#: framework/helpers/class-tgm-plugin-activation.php:343
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: framework/helpers/class-tgm-plugin-activation.php:344
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#. translators: 1: plugin name(s).
+#: framework/helpers/class-tgm-plugin-activation.php:345
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: framework/helpers/class-tgm-plugin-activation.php:351
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: framework/helpers/class-tgm-plugin-activation.php:357
+msgid "The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s."
+msgid_plural "The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: framework/helpers/class-tgm-plugin-activation.php:363
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: framework/helpers/class-tgm-plugin-activation.php:369
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: framework/helpers/class-tgm-plugin-activation.php:375
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/helpers/class-tgm-plugin-activation.php:381
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/helpers/class-tgm-plugin-activation.php:386
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/helpers/class-tgm-plugin-activation.php:391
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/helpers/class-tgm-plugin-activation.php:396
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: framework/helpers/class-tgm-plugin-activation.php:397
+#: framework/helpers/class-tgm-plugin-activation.php:931
+#: framework/helpers/class-tgm-plugin-activation.php:2729
+#: framework/helpers/class-tgm-plugin-activation.php:3798
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: framework/helpers/class-tgm-plugin-activation.php:398
+#: framework/helpers/class-tgm-plugin-activation.php:3369
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: framework/helpers/class-tgm-plugin-activation.php:399
+#: framework/helpers/class-tgm-plugin-activation.php:3158
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name.
+#: framework/helpers/class-tgm-plugin-activation.php:401
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: framework/helpers/class-tgm-plugin-activation.php:403
+msgid "Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin."
+msgstr ""
+
+#. translators: 1: dashboard link.
+#: framework/helpers/class-tgm-plugin-activation.php:405
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: framework/helpers/class-tgm-plugin-activation.php:406
+msgid "Dismiss this notice"
+msgstr ""
+
+#: framework/helpers/class-tgm-plugin-activation.php:407
+msgid "There are one or more required or recommended plugins to install, update or activate."
+msgstr ""
+
+#: framework/helpers/class-tgm-plugin-activation.php:408
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: framework/helpers/class-tgm-plugin-activation.php:624
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: framework/helpers/class-tgm-plugin-activation.php:625
+msgid "Update Required"
+msgstr ""
+
+#: framework/helpers/class-tgm-plugin-activation.php:1041
+msgid "The remote plugin package does not contain a folder with the desired slug and renaming did not work."
+msgstr ""
+
+#: framework/helpers/class-tgm-plugin-activation.php:1041
+#: framework/helpers/class-tgm-plugin-activation.php:1044
+msgid "Please contact the plugin provider and ask them to package their plugin according to the WordPress guidelines."
+msgstr ""
+
+#: framework/helpers/class-tgm-plugin-activation.php:1044
+msgid "The remote plugin package consists of more than one file, but the files are not packaged in a folder."
+msgstr ""
+
+#: framework/helpers/class-tgm-plugin-activation.php:1237
+#: framework/helpers/class-tgm-plugin-activation.php:3154
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr ""
+
+#. translators: %s: version number
+#: framework/helpers/class-tgm-plugin-activation.php:2155
+msgid "TGMPA v%s"
+msgstr ""
+
+#: framework/helpers/class-tgm-plugin-activation.php:2456
+#: template-parts/admin-templates/plugins.php:81
+#: template-parts/admin-templates/plugins.php:155
+msgid "Required"
+msgstr ""
+
+#: framework/helpers/class-tgm-plugin-activation.php:2459
+#: template-parts/admin-templates/plugins.php:87
+#: template-parts/admin-templates/plugins.php:161
+msgid "Recommended"
+msgstr ""
+
+#: framework/helpers/class-tgm-plugin-activation.php:2477
+msgid "WordPress Repository"
+msgstr ""
+
+#: framework/helpers/class-tgm-plugin-activation.php:2480
+msgid "External Source"
+msgstr ""
+
+#: framework/helpers/class-tgm-plugin-activation.php:2483
+msgid "Pre-Packaged"
+msgstr ""
+
+#: framework/helpers/class-tgm-plugin-activation.php:2502
+msgid "Not Installed"
+msgstr ""
+
+#: framework/helpers/class-tgm-plugin-activation.php:2506
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: framework/helpers/class-tgm-plugin-activation.php:2508
+msgid "Active"
+msgstr ""
+
+#: framework/helpers/class-tgm-plugin-activation.php:2514
+msgid "Required Update not Available"
+msgstr ""
+
+#: framework/helpers/class-tgm-plugin-activation.php:2516
+msgid "Requires Update"
+msgstr ""
+
+#: framework/helpers/class-tgm-plugin-activation.php:2518
+msgid "Update recommended"
+msgstr ""
+
+#. translators: 1: install status, 2: update status
+#: framework/helpers/class-tgm-plugin-activation.php:2527
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr ""
+
+#. translators: 1: number of plugins.
+#: framework/helpers/class-tgm-plugin-activation.php:2576
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: framework/helpers/class-tgm-plugin-activation.php:2580
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: framework/helpers/class-tgm-plugin-activation.php:2584
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: framework/helpers/class-tgm-plugin-activation.php:2588
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: framework/helpers/class-tgm-plugin-activation.php:2677
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr ""
+
+#: framework/helpers/class-tgm-plugin-activation.php:2685
+msgid "Installed version:"
+msgstr ""
+
+#: framework/helpers/class-tgm-plugin-activation.php:2693
+msgid "Minimum required version:"
+msgstr ""
+
+#: framework/helpers/class-tgm-plugin-activation.php:2705
+msgid "Available version:"
+msgstr ""
+
+#: framework/helpers/class-tgm-plugin-activation.php:2729
+msgid "No plugins to install, update or activate."
+msgstr ""
+
+#: framework/helpers/class-tgm-plugin-activation.php:2744
+msgid "Plugin"
+msgstr ""
+
+#: framework/helpers/class-tgm-plugin-activation.php:2745
+msgid "Source"
+msgstr ""
+
+#: framework/helpers/class-tgm-plugin-activation.php:2746
+msgid "Type"
+msgstr ""
+
+#: framework/helpers/class-tgm-plugin-activation.php:2750
+msgid "Version"
+msgstr ""
+
+#: framework/helpers/class-tgm-plugin-activation.php:2751
+msgid "Status"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: framework/helpers/class-tgm-plugin-activation.php:2802
+msgid "Install %2$s"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: framework/helpers/class-tgm-plugin-activation.php:2807
+msgid "Update %2$s"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: framework/helpers/class-tgm-plugin-activation.php:2813
+msgid "Activate %2$s"
+msgstr ""
+
+#: framework/helpers/class-tgm-plugin-activation.php:2886
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: framework/helpers/class-tgm-plugin-activation.php:2962
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: framework/helpers/class-tgm-plugin-activation.php:2964
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: framework/helpers/class-tgm-plugin-activation.php:3005
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: framework/helpers/class-tgm-plugin-activation.php:3007
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: framework/helpers/class-tgm-plugin-activation.php:3114
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: framework/helpers/class-tgm-plugin-activation.php:3140
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: framework/helpers/class-tgm-plugin-activation.php:3368
+msgid "Plugin activation failed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: framework/helpers/class-tgm-plugin-activation.php:3713
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#. translators: 1: plugin name, 2: error message.
+#: framework/helpers/class-tgm-plugin-activation.php:3716
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: framework/helpers/class-tgm-plugin-activation.php:3718
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: framework/helpers/class-tgm-plugin-activation.php:3722
+msgid "The installation and activation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: framework/helpers/class-tgm-plugin-activation.php:3724
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: framework/helpers/class-tgm-plugin-activation.php:3724
+#: framework/helpers/class-tgm-plugin-activation.php:3732
+msgid "Show Details"
+msgstr ""
+
+#. translators: 1: plugin name.
+#: framework/helpers/class-tgm-plugin-activation.php:3724
+#: framework/helpers/class-tgm-plugin-activation.php:3732
+msgid "Hide Details"
+msgstr ""
+
+#: framework/helpers/class-tgm-plugin-activation.php:3725
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: framework/helpers/class-tgm-plugin-activation.php:3727
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: framework/helpers/class-tgm-plugin-activation.php:3730
+msgid "The installation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: framework/helpers/class-tgm-plugin-activation.php:3732
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: framework/helpers/class-tgm-plugin-activation.php:3733
+msgid "All installations have been completed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: framework/helpers/class-tgm-plugin-activation.php:3735
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: framework/inc/breadcrumb.php:14
+#: template-parts/footer/bottom-nav.php:13
+msgid "Home"
+msgstr ""
+
+#. translators: 1: category title
+#. translators: 1: tag title
+#. translators: 1: daily archive text
+#. translators: 1: monthly archive text
+#. translators: 1: yearly archive text
+#: framework/inc/breadcrumb.php:15
+#: framework/inc/breadcrumb.php:16
+#: framework/inc/breadcrumb.php:17
+#: framework/inc/breadcrumb.php:18
+#: framework/inc/breadcrumb.php:19
+#: template-parts/banner/banner-blog.php:39
+#: template-parts/banner/banner-blog.php:50
+#: template-parts/banner/banner-blog.php:75
+#: template-parts/banner/banner-blog.php:87
+#: template-parts/banner/banner-blog.php:100
+msgid "%s"
+msgstr ""
+
+#: framework/inc/breadcrumb.php:20
+#: template-parts/banner/banner-blog.php:63
+msgid "Error 404"
+msgstr ""
+
+#: framework/inc/breadcrumb.php:179
+msgid "products"
+msgstr ""
+
+#: framework/inc/breadcrumb.php:211
+msgid "Page"
+msgstr ""
+
+#: framework/inc/template-functions.php:147
+msgid "Post gallery image"
+msgstr ""
+
+#. translators: %s: Comment author link.
+#: framework/inc/theme-custom-functions.php:474
+msgid "%s <span class=\"screen-reader-text says\">says:</span>"
+msgstr ""
+
+#: framework/inc/theme-custom-functions.php:494
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: functions.php:51
+msgid "Dear valued customer. Please follow up this announcement first."
+msgstr ""
+
+#: functions.php:52
+msgid "As BoroBazar v1.2.x is introuduced, some changes are made from previous version to this version. So, migrating users from the older version "
+msgstr ""
+
+#: functions.php:54
+msgid "please follow up this documentaion."
+msgstr ""
+
+#: header.php:37
+msgid "Skip to content"
+msgstr ""
+
+#. Template Name of the theme
+msgid "BoroBazar Full Width Template."
+msgstr ""
+
+#. translators: %s: search query.
+#: search.php:64
+msgid "Search Results for: %s"
+msgstr ""
+
+#: searchform.php:3
+#: woocommerce/product-searchform.php:27
+msgid "Search for:"
+msgstr ""
+
+#: searchform.php:4
+msgid "Search..."
+msgstr ""
+
+#: setup/Admin/Menu.php:49
+#: setup/Admin/Menu.php:50
+msgid "Borobazar"
+msgstr ""
+
+#: setup/Admin/Menu.php:87
+#: setup/Admin/Menu.php:88
+msgid "Borobazar Options Panel"
+msgstr ""
+
+#: setup/Admin/Menu.php:96
+msgid "Theme Documentation"
+msgstr ""
+
+#: setup/Admin/Menu.php:97
+msgid "Documentation"
+msgstr ""
+
+#: setup/Admin/Menu.php:114
+msgid "Theme Support"
+msgstr ""
+
+#: setup/Admin/Menu.php:115
+msgid "Support Forum"
+msgstr ""
+
+#: setup/Admin/views/demo-content.php:9
+#: setup/Hooks.php:66
+msgid "Demo Content"
+msgstr ""
+
+#: setup/Admin/views/demo-content.php:18
+msgid "Please install the mandatory plugins before you start importing the demo data"
+msgstr ""
+
+#: setup/Admin/views/demo-content.php:40
+msgid "No preview image."
+msgstr ""
+
+#: setup/Admin/views/demo-content.php:50
+msgid "Preview Demo"
+msgstr ""
+
+#: setup/Admin/views/demo-content.php:52
+msgid "Import Demo"
+msgstr ""
+
+#: setup/Admin/views/logo.php:7
+#: template-parts/admin-templates/miscellaneous.php:19
+#: template-parts/admin-templates/plugins.php:29
+#: template-parts/admin-templates/theme_setup_screen.php:41
+#: template-parts/admin-templates/welcome.php:31
+msgid "v."
+msgstr ""
+
+#: setup/Admin/views/plugins.php:3
+msgid "Required Plugins"
+msgstr ""
+
+#: setup/Admin/views/plugins.php:11
+msgid "All Plugins Installed"
+msgstr ""
+
+#: setup/Admin/views/plugins.php:13
+msgid "Install All Plugins"
+msgstr ""
+
+#: setup/Admin/views/plugins.php:37
+#: setup/Admin/views/supported-plugins.php:29
+msgid "No Plugins found."
+msgstr ""
+
+#: setup/Admin/views/supported-plugins.php:3
+msgid "Supported Plugins"
+msgstr ""
+
+#: setup/Admin/views/welcome.php:24
+#: template-parts/admin-templates/miscellaneous.php:39
+msgid "F.A.Q"
+msgstr ""
+
+#: setup/Admin/views/welcome.php:26
+#: template-parts/admin-templates/miscellaneous.php:41
+msgid "Check our most frequently asked question"
+msgstr ""
+
+#: setup/Admin/views/welcome.php:34
+#: template-parts/admin-templates/miscellaneous.php:49
+msgid "How can I update the theme to a newer version?"
+msgstr ""
+
+#: setup/Admin/views/welcome.php:37
+#: setup/Admin/views/welcome.php:53
+#: setup/Admin/views/welcome.php:69
+#: setup/Admin/views/welcome.php:85
+#: template-parts/admin-templates/miscellaneous.php:52
+#: template-parts/admin-templates/miscellaneous.php:68
+#: template-parts/admin-templates/miscellaneous.php:84
+#: template-parts/admin-templates/miscellaneous.php:100
+msgid "Expand"
+msgstr ""
+
+#: setup/Admin/views/welcome.php:40
+#: setup/Admin/views/welcome.php:56
+#: setup/Admin/views/welcome.php:72
+#: setup/Admin/views/welcome.php:88
+#: template-parts/admin-templates/miscellaneous.php:55
+#: template-parts/admin-templates/miscellaneous.php:71
+#: template-parts/admin-templates/miscellaneous.php:87
+#: template-parts/admin-templates/miscellaneous.php:103
+msgid "Collapse"
+msgstr ""
+
+#: setup/Admin/views/welcome.php:45
+#: template-parts/admin-templates/miscellaneous.php:60
+msgid "To update the theme with a newer version, go to WP_Admin panel > Dashboard > Updates section. Then check for update. Also you can force check the update by clicking on \"check again\" link."
+msgstr ""
+
+#: setup/Admin/views/welcome.php:50
+#: template-parts/admin-templates/miscellaneous.php:65
+msgid "How can I import demo data after theme installation?"
+msgstr ""
+
+#: setup/Admin/views/welcome.php:61
+#: template-parts/admin-templates/miscellaneous.php:76
+msgid "After installation the theme, please install all the required plugins first. After the installation and activation, setup all the necessary API keys, data in the recommeced plugins. For more help, when the all the theme installation progress done GREEN, then you can import demo content from the demo installation window."
+msgstr ""
+
+#: setup/Admin/views/welcome.php:66
+#: template-parts/admin-templates/miscellaneous.php:81
+msgid "How can I make any custom changes any the theme?"
+msgstr ""
+
+#: setup/Admin/views/welcome.php:77
+#: template-parts/admin-templates/miscellaneous.php:92
+msgid "It is always preferable not to do any custom changes inside the theme directly. It is always wise to work on the child theme of the current installed theme."
+msgstr ""
+
+#: setup/Admin/views/welcome.php:82
+#: template-parts/admin-templates/miscellaneous.php:97
+msgid "Do I need to use Gutenberg plugin or the default Gutenberg facilities provided by the WordPress is enough?"
+msgstr ""
+
+#: setup/Admin/views/welcome.php:93
+#: template-parts/admin-templates/miscellaneous.php:108
+msgid "There is no conflict whether to use default Gutenberg facilities or the Gutenberg plugin."
+msgstr ""
+
+#: setup/Hooks.php:45
+msgid "Welcome"
+msgstr ""
+
+#: setup/Hooks.php:49
+msgid "Requirements"
+msgstr ""
+
+#: setup/Hooks.php:53
+msgid "Activation"
+msgstr ""
+
+#: setup/Hooks.php:58
+msgid "Child Theme"
+msgstr ""
+
+#: setup/Hooks.php:70
+msgid "Supported Plugin"
+msgstr ""
+
+#: setup/Hooks.php:74
+#: template-parts/admin-templates/intro.php:24
+msgid "Done"
+msgstr ""
+
+#: setup/Traits/SetupTrait.php:303
+msgid "WordPress Version"
+msgstr ""
+
+#: setup/Traits/SetupTrait.php:310
+msgid "PHP Version"
+msgstr ""
+
+#: setup/Traits/SetupTrait.php:318
+#: template-parts/admin-templates/theme_setup_screen.php:102
+msgid "WordPress Memory Limit"
+msgstr ""
+
+#: setup/Traits/SetupTrait.php:325
+#: template-parts/admin-templates/theme_setup_screen.php:145
+msgid "PHP max input variables"
+msgstr ""
+
+#: setup/Traits/SetupTrait.php:332
+#: template-parts/admin-templates/theme_setup_screen.php:165
+msgid "PHP maximum execution time"
+msgstr ""
+
+#: setup/Traits/SetupTrait.php:339
+#: template-parts/admin-templates/theme_setup_screen.php:186
+msgid "PHP post maximum size"
+msgstr ""
+
+#: setup/Traits/SetupTrait.php:346
+#: template-parts/admin-templates/theme_setup_screen.php:208
+msgid "Maximum Upload Size"
+msgstr ""
+
+#: setup/Traits/SetupTrait.php:374
+msgid "MySQL Version"
+msgstr ""
+
+#: setup/Traits/SetupTrait.php:382
+msgid "MariaDB Version"
+msgstr ""
+
+#: setup/Traits/SetupTrait.php:532
+msgid "Docs"
+msgstr ""
+
+#: setup/Traits/SetupTrait.php:540
+msgid "Support"
+msgstr ""
+
+#: setup/Traits/SetupTrait.php:544
+msgid "Translate Guide"
+msgstr ""
+
+#: template-parts/admin-templates/intro.php:27
+msgid "Configure from here"
+msgstr ""
+
+#: template-parts/admin-templates/intro.php:43
+msgid "Server Configuration"
+msgstr ""
+
+#: template-parts/admin-templates/intro.php:44
+msgid "Check your server configuration and take step"
+msgstr ""
+
+#: template-parts/admin-templates/intro.php:48
+#: template-parts/admin-templates/intro.php:70
+#: template-parts/admin-templates/intro.php:92
+msgid "Success!"
+msgstr ""
+
+#: template-parts/admin-templates/intro.php:51
+#: template-parts/admin-templates/intro.php:73
+#: template-parts/admin-templates/intro.php:95
+msgid "Click here"
+msgstr ""
+
+#: template-parts/admin-templates/intro.php:65
+msgid "Permalink Setup"
+msgstr ""
+
+#: template-parts/admin-templates/intro.php:66
+msgid "Make your site url seo friendly"
+msgstr ""
+
+#: template-parts/admin-templates/intro.php:87
+msgid "All Plugin Setup"
+msgstr ""
+
+#: template-parts/admin-templates/intro.php:88
+msgid "Set up all plugins for better functionality"
+msgstr ""
+
+#: template-parts/admin-templates/miscellaneous.php:28
+#: template-parts/admin-templates/plugins.php:38
+#: template-parts/admin-templates/theme_setup_screen.php:50
+#: template-parts/admin-templates/welcome.php:40
+msgid "Congrats on the new store! 🎉"
+msgstr ""
+
+#: template-parts/admin-templates/miscellaneous.php:30
+#: template-parts/admin-templates/plugins.php:40
+#: template-parts/admin-templates/theme_setup_screen.php:52
+#: template-parts/admin-templates/welcome.php:42
+msgid "Complete these simple steps to get your store up and running."
+msgstr ""
+
+#: template-parts/admin-templates/miscellaneous.php:120
+#: template-parts/admin-templates/plugins.php:199
+#: template-parts/admin-templates/plugins.php:204
+#: template-parts/admin-templates/theme_setup_screen.php:356
+#: template-parts/admin-templates/welcome.php:103
+msgid "Previous Step"
+msgstr ""
+
+#: template-parts/admin-templates/miscellaneous.php:123
+#: template-parts/admin-templates/plugins.php:210
+#: template-parts/admin-templates/theme_setup_screen.php:359
+#: template-parts/admin-templates/welcome.php:106
+msgid "Next Step"
+msgstr ""
+
+#: template-parts/admin-templates/plugins.php:48
+msgid "Required plugins list"
+msgstr ""
+
+#: template-parts/admin-templates/plugins.php:51
+#: template-parts/admin-templates/plugins.php:125
+msgid "For Bulk Installations,"
+msgstr ""
+
+#: template-parts/admin-templates/plugins.php:53
+#: template-parts/admin-templates/plugins.php:127
+msgid "click here"
+msgstr ""
+
+#: template-parts/admin-templates/plugins.php:94
+#: template-parts/admin-templates/plugins.php:168
+msgid "Update Avaiable"
+msgstr ""
+
+#: template-parts/admin-templates/plugins.php:122
+msgid "Supported plugins list"
+msgstr ""
+
+#: template-parts/admin-templates/theme_setup_screen.php:61
+msgid "Site Configuration"
+msgstr ""
+
+#: template-parts/admin-templates/theme_setup_screen.php:63
+msgid "Mandatory site configuration"
+msgstr ""
+
+#: template-parts/admin-templates/theme_setup_screen.php:69
+msgid "Config name"
+msgstr ""
+
+#: template-parts/admin-templates/theme_setup_screen.php:72
+msgid "Required status"
+msgstr ""
+
+#: template-parts/admin-templates/theme_setup_screen.php:75
+msgid "Current status"
+msgstr ""
+
+#: template-parts/admin-templates/theme_setup_screen.php:82
+msgid "WordPress version"
+msgstr ""
+
+#: template-parts/admin-templates/theme_setup_screen.php:122
+msgid "PHP version"
+msgstr ""
+
+#: template-parts/admin-templates/theme_setup_screen.php:126
+#: template-parts/admin-templates/theme_setup_screen.php:234
+#: template-parts/admin-templates/theme_setup_screen.php:257
+msgid ">= "
+msgstr ""
+
+#: template-parts/admin-templates/theme_setup_screen.php:230
+msgid "MySQL version"
+msgstr ""
+
+#: template-parts/admin-templates/theme_setup_screen.php:253
+msgid "MariaDB version"
+msgstr ""
+
+#: template-parts/admin-templates/theme_setup_screen.php:287
+msgid "Plugin Status"
+msgstr ""
+
+#: template-parts/admin-templates/theme_setup_screen.php:290
+msgid "means active plugin."
+msgstr ""
+
+#: template-parts/admin-templates/theme_setup_screen.php:294
+msgid "means installed but deactivated plugin."
+msgstr ""
+
+#: template-parts/admin-templates/theme_setup_screen.php:298
+msgid "means not installed plugin."
+msgstr ""
+
+#: template-parts/admin-templates/theme_setup_screen.php:304
+msgid "Plugin name"
+msgstr ""
+
+#: template-parts/admin-templates/theme_setup_screen.php:305
+msgid "Plugin status"
+msgstr ""
+
+#: template-parts/admin-templates/theme_setup_screen.php:339
+msgid "For more information"
+msgstr ""
+
+#: template-parts/admin-templates/theme_setup_screen.php:341
+msgid "Click Here"
+msgstr ""
+
+#: template-parts/admin-templates/welcome.php:49
+msgid "Please complete all the theme setup progress above."
+msgstr ""
+
+#: template-parts/admin-templates/welcome.php:51
+msgid "Import Demo Data"
+msgstr ""
+
+#: template-parts/admin-templates/welcome.php:60
+msgid "Support & Documentation"
+msgstr ""
+
+#: template-parts/admin-templates/welcome.php:62
+msgid "Check our documentation and get started"
+msgstr ""
+
+#: template-parts/admin-templates/welcome.php:69
+#: template-parts/admin-templates/welcome.php:72
+msgid "Customer Support"
+msgstr ""
+
+#: template-parts/admin-templates/welcome.php:73
+msgid "Please open a ticket in the support forum if got any bug or issues in our theme."
+msgstr ""
+
+#: template-parts/admin-templates/welcome.php:80
+#: template-parts/admin-templates/welcome.php:83
+msgid "Online Documentaion"
+msgstr ""
+
+#: template-parts/admin-templates/welcome.php:84
+msgid "Please check the online documentation for better understanding."
+msgstr ""
+
+#: template-parts/admin-templates/welcome.php:91
+msgid "Special note : Please complete the setup guide for better understanding of BoroBazar."
+msgstr ""
+
+#: template-parts/banner/banner-blog.php:23
+msgid "Blog"
+msgstr ""
+
+#: template-parts/banner/banner-blog.php:27
+#: template-parts/banner/banner-blog.php:107
+#: template-parts/banner/banner-blog.php:115
+msgid "explore"
+msgstr ""
+
+#: template-parts/banner/banner-blog.php:34
+msgid "explore category "
+msgstr ""
+
+#: template-parts/banner/banner-blog.php:45
+msgid "explore tag "
+msgstr ""
+
+#: template-parts/banner/banner-blog.php:57
+msgid "explore author posts "
+msgstr ""
+
+#: template-parts/banner/banner-blog.php:70
+msgid "explore daily archives "
+msgstr ""
+
+#: template-parts/banner/banner-blog.php:81
+msgid "explore monthly archives "
+msgstr ""
+
+#: template-parts/banner/banner-blog.php:88
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr ""
+
+#: template-parts/banner/banner-blog.php:94
+msgid "explore yearly archives "
+msgstr ""
+
+#: template-parts/banner/banner-blog.php:101
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: template-parts/banner/banner-blog.php:109
+msgid "Blog Archives"
+msgstr ""
+
+#: template-parts/banner/banner-blog.php:118
+msgid "Searched query : "
+msgstr ""
+
+#: template-parts/banner/banner-blog.php:123
+#: template-parts/banner/banner-shop.php:21
+#: template-parts/banner/banner-single.php:18
+#: template-parts/banner/banner.php:18
+msgid "explore "
+msgstr ""
+
+#: template-parts/content/content-none.php:32
+msgid "Sorry, no result found"
+msgstr ""
+
+#. translators: 1: link to WP admin new post page.
+#: template-parts/content/content-none.php:39
+msgid "Ready to publish your first post? <a href=\"%1$s\"> Get started here </a>."
+msgstr ""
+
+#: template-parts/content/content-none.php:49
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr ""
+
+#: template-parts/content/content-none.php:51
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr ""
+
+#: template-parts/content/content-page.php:42
+#: template-parts/content/content-single.php:44
+msgid "Pages:"
+msgstr ""
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: template-parts/content/content-page.php:57
+#: template-parts/content/content-single.php:59
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr ""
+
+#: template-parts/content/content-single.php:2
+msgid "Read More"
+msgstr ""
+
+#: template-parts/content/content-single.php:80
+msgctxt "Comma used between tag items."
+msgid ", "
+msgstr ""
+
+#: template-parts/content/content-single.php:81
+msgctxt "Comma used between category items."
+msgid ", "
+msgstr ""
+
+#: template-parts/content/content-single.php:89
+msgctxt "Used before tag items."
+msgid "Tags: "
+msgstr ""
+
+#: template-parts/content/content-single.php:101
+msgctxt "Used before category items."
+msgid "Categories:"
+msgstr ""
+
+#. translators: %s: parent post link
+#: template-parts/content/content-single.php:111
+msgid "<span class=\"meta-nav\">Published in</span><span class=\"post-title\">%s</span>"
+msgstr ""
+
+#: template-parts/copyright/default/copyright.php:6
+#: template-parts/copyright/default/copyright.php:9
+msgid "RedQ, Inc. All rights reserved"
+msgstr ""
+
+#. translators: 1: Theme name, 2: Theme author.
+#: template-parts/copyright/default/copyright.php:39
+msgid "© Copyright "
+msgstr ""
+
+#: template-parts/footer/bottom-nav.php:2
+msgid "Menu"
+msgstr ""
+
+#: template-parts/footer/bottom-nav.php:20
+#: woocommerce/cart-counter/header.php:25
+msgid "Cart"
+msgstr ""
+
+#: template-parts/footer/bottom-nav.php:27
+#: template-parts/header/shared/woo.php:29
+msgid "Account"
+msgstr ""
+
+#: template-parts/global/site-loader.php:14
+msgid "Site Loader"
+msgstr ""
+
+#: template-parts/global/store-notice.php:5
+#: template-parts/global/store-notice.php:12
+msgid "Learn More"
+msgstr ""
+
+#: template-parts/global/store-notice.php:33
+msgid "Close"
+msgstr ""
+
+#: template-parts/global/woocommerce-unit.php:6
+msgid "Product Unit Label"
+msgstr ""
+
+#: template-parts/global/woocommerce-unit.php:7
+msgid "Ex. /, per"
+msgstr ""
+
+#: template-parts/global/woocommerce-unit.php:10
+msgid "Enter product unit label that will show in product front-end"
+msgstr ""
+
+#: template-parts/global/woocommerce-unit.php:18
+msgid "Product Unit"
+msgstr ""
+
+#: template-parts/global/woocommerce-unit.php:19
+msgid "Ex. kg, ml"
+msgstr ""
+
+#: template-parts/global/woocommerce-unit.php:22
+msgid "Enter product unit that will show in product front-end"
+msgstr ""
+
+#: template-parts/header/shared/drawer-menu.php:9
+msgid "Drawer Menu"
+msgstr ""
+
+#: template-parts/header/shared/global-search.php:10
+#: template-parts/header/shared/search.php:2
+msgid "What are you looking for.."
+msgstr ""
+
+#: template-parts/header/shared/global-search.php:11
+#: template-parts/header/shared/search.php:3
+msgid "Explore search page."
+msgstr ""
+
+#: template-parts/header/shared/global-search.php:52
+#: template-parts/header/shared/site-branding.php:51
+msgid "Search"
+msgstr ""
+
+#: template-parts/header/shared/search.php:26
+msgid "Search Handler"
+msgstr ""
+
+#: template-parts/header/shared/site-branding.php:15
+msgid "Back"
+msgstr ""
+
+#: template-parts/header/shared/site-branding.php:32
+#: woocommerce/myaccount/form-login.php:54
+#: woocommerce/myaccount/form-lost-password.php:51
+msgid "home"
+msgstr ""
+
+#: template-parts/header/shared/woo.php:23
+msgid "My Account"
+msgstr ""
+
+#: template-parts/post-content/post-aside.php:2
+#: template-parts/post-content/post-audio.php:2
+#: template-parts/post-content/post-gallery.php:2
+#: template-parts/post-content/post-video.php:3
+#: template-parts/post-content/post.php:2
+msgid "Read More.."
+msgstr ""
+
+#: template-parts/product-grid/grid-alpine.php:136
+#: template-parts/product-grid/grid-broomstick.php:139
+#: template-parts/product-grid/grid-maple.php:140
+#: template-parts/product-grid/grid-oak.php:138
+#: template-parts/product-grid/grid-obsidian.php:139
+#: template-parts/product-grid/grid-sweetgum.php:139
+msgid "Out Of Stock"
+msgstr ""
+
+#. translators: %s: Discount.
+#: template-parts/product-grid/grid-alpine.php:145
+#: template-parts/product-grid/grid-broomstick.php:147
+#: template-parts/product-grid/grid-maple.php:150
+#: template-parts/product-grid/grid-oak.php:146
+#: template-parts/product-grid/grid-obsidian.php:147
+#: template-parts/product-grid/grid-sweetgum.php:149
+msgid "Save %s %%"
+msgstr ""
+
+#: template-parts/product-grid/grid-alpine.php:152
+#: template-parts/product-grid/grid-broomstick.php:156
+#: template-parts/product-grid/grid-maple.php:159
+#: template-parts/product-grid/grid-oak.php:154
+#: template-parts/product-grid/grid-obsidian.php:154
+#: template-parts/product-grid/grid-sweetgum.php:157
+msgid "On Sale"
+msgstr ""
+
+#: template-parts/product-grid/grid-alpine.php:158
+msgid "Pre Order"
+msgstr ""
+
+#: template-parts/product-grid/grid-alpine.php:175
+#: template-parts/product-grid/grid-broomstick.php:195
+#: template-parts/product-grid/grid-maple.php:194
+#: template-parts/product-grid/grid-oak.php:182
+#: template-parts/product-grid/grid-obsidian.php:213
+#: template-parts/product-grid/grid-sweetgum.php:185
+msgid "Add to Cart"
+msgstr ""
+
+#: template-parts/product-grid/grid-alpine.php:185
+#: template-parts/product-grid/grid-broomstick.php:196
+#: template-parts/product-grid/grid-broomstick.php:219
+#: template-parts/product-grid/grid-maple.php:207
+#: template-parts/product-grid/grid-oak.php:195
+#: template-parts/product-grid/grid-obsidian.php:242
+#: template-parts/product-grid/grid-sweetgum.php:198
+msgid "Decrement"
+msgstr ""
+
+#: template-parts/product-grid/grid-alpine.php:195
+#: template-parts/product-grid/grid-broomstick.php:236
+#: template-parts/product-grid/grid-maple.php:225
+#: template-parts/product-grid/grid-oak.php:213
+#: template-parts/product-grid/grid-obsidian.php:237
+#: template-parts/product-grid/grid-sweetgum.php:216
+msgid "Increment"
+msgstr ""
+
+#: template-parts/product-grid/grid-alpine.php:207
+msgid "Quick View"
+msgstr ""
+
+#: template-parts/product-grid/grid-alpine.php:216
+msgid "View Details"
+msgstr ""
+
+#: template-parts/product-grid/grid-broomstick.php:248
+#: template-parts/product-grid/grid-broomstick.php:249
+#: template-parts/product-grid/grid-broomstick.php:258
+#: template-parts/product-grid/grid-broomstick.php:259
+#: template-parts/product-grid/grid-maple.php:237
+#: template-parts/product-grid/grid-maple.php:238
+#: template-parts/product-grid/grid-maple.php:247
+#: template-parts/product-grid/grid-maple.php:248
+#: template-parts/product-grid/grid-oak.php:225
+#: template-parts/product-grid/grid-oak.php:226
+#: template-parts/product-grid/grid-oak.php:235
+#: template-parts/product-grid/grid-oak.php:236
+#: template-parts/product-grid/grid-obsidian.php:159
+#: template-parts/product-grid/grid-obsidian.php:168
+#: template-parts/product-grid/grid-sweetgum.php:228
+#: template-parts/product-grid/grid-sweetgum.php:229
+#: template-parts/product-grid/grid-sweetgum.php:238
+#: template-parts/product-grid/grid-sweetgum.php:239
+msgid "View Products"
+msgstr ""
+
+#: template-parts/product-grid/grid-oak.php:183
+msgid "Add"
+msgstr ""
+
+#: template-parts/product-grid/grid-sweetgum.php:186
+msgid "Add to cart"
+msgstr ""
+
+#. translators: 1: get cart content counts, 2: get cart counts.
+#: woocommerce/cart-counter/header.php:13
+msgid "%d"
+msgid_plural "%d"
+msgstr[0] ""
+msgstr[1] ""
+
+#: woocommerce/cart/cart.php:42
+#: woocommerce/cart/cart.php:89
+msgid "Product"
+msgstr ""
+
+#: woocommerce/cart/cart.php:43
+#: woocommerce/cart/cart.php:109
+msgid "Price"
+msgstr ""
+
+#. translators: %s: Quantity.
+#: woocommerce/cart/cart.php:44
+#: woocommerce/cart/cart.php:115
+#: woocommerce/global/quantity-input.php:34
+msgid "Quantity"
+msgstr ""
+
+#: woocommerce/cart/cart.php:45
+#: woocommerce/cart/cart.php:160
+msgid "Subtotal"
+msgstr ""
+
+#: woocommerce/cart/cart.php:68
+#: woocommerce/cart/mini-cart.php:64
+msgid "Remove this item"
+msgstr ""
+
+#: woocommerce/cart/cart.php:104
+msgid "Available on backorder"
+msgstr ""
+
+#: woocommerce/cart/cart.php:178
+msgid "Coupon:"
+msgstr ""
+
+#: woocommerce/cart/cart.php:178
+msgid "Coupon code"
+msgstr ""
+
+#: woocommerce/cart/cart.php:178
+#: woocommerce/cart/cart.php:179
+msgid "Apply coupon"
+msgstr ""
+
+#: woocommerce/cart/cart.php:185
+msgid "Update cart"
+msgstr ""
+
+#: woocommerce/cart/cross-sells.php:24
+msgid "You may be interested in&hellip;"
+msgstr ""
+
+#: woocommerce/cart/mini-cart.php:88
+msgid "Unit price : "
+msgstr ""
+
+#: woocommerce/cart/mini-cart.php:119
+msgid "no product found"
+msgstr ""
+
+#: woocommerce/cart/mini-cart.php:120
+msgid "Your cart is empty"
+msgstr ""
+
+#: woocommerce/cart/mini-cart.php:121
+msgid "Please add product to your cart"
+msgstr ""
+
+#: woocommerce/cart/mini-cart.php:138
+msgid "Proceed To Checkout"
+msgstr ""
+
+#. translators: %s: Quantity.
+#: woocommerce/global/quantity-input.php:34
+msgid "%s quantity"
+msgstr ""
+
+#: woocommerce/global/quantity-input.php:51
+msgctxt "Product quantity input tooltip"
+msgid "Qty"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:40
+#: woocommerce/myaccount/form-lost-password.php:37
+msgid "Auth"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:63
+msgid "Welcome Back, Get Login"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:65
+msgid "Create Account for Free"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:70
+msgid "Join us anytime. Already have an account?"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:70
+msgid "Sign in now"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:71
+msgid "Join us anytime. Don’t have an account?"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:71
+msgid "Create account"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:83
+msgid "Username or email address"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:88
+#: woocommerce/myaccount/form-login.php:168
+msgid "Password"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:96
+msgid "Remember me"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:99
+#: woocommerce/myaccount/form-lost-password.php:59
+msgid "Lost your password?"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:104
+msgid "Log in"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:113
+#: woocommerce/myaccount/form-login.php:191
+msgid "Or"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:151
+msgid "Username"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:159
+msgid "Email address"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:174
+msgid "A password will be sent to your email address."
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:182
+msgid "Register"
+msgstr ""
+
+#: woocommerce/myaccount/form-lost-password.php:60
+msgid "Please enter your username or email address. You will receive a link to create a new password via email."
+msgstr ""
+
+#: woocommerce/myaccount/form-lost-password.php:69
+msgid "Username or email"
+msgstr ""
+
+#: woocommerce/myaccount/form-lost-password.php:79
+msgid "Reset password"
+msgstr ""
+
+#: woocommerce/product-searchform.php:28
+msgid "Search products..."
+msgstr ""
+
+#: woocommerce/single-product/add-to-cart/external.php:29
+#: woocommerce/single-product/add-to-cart/grouped.php:123
+#: woocommerce/single-product/add-to-cart/simple.php:51
+#: woocommerce/single-product/add-to-cart/variation-add-to-cart-button.php:35
+msgid "Product single add to cart icon"
+msgstr ""
+
+#: woocommerce/single-product/meta.php:32
+msgid "SKU:"
+msgstr ""
+
+#: woocommerce/single-product/meta.php:39
+msgid "N/A"
+msgstr ""
+
+#: woocommerce/single-product/meta.php:53
+#: woocommerce/single-product/meta.php:57
+msgid "Category:"
+msgid_plural "Categories:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: woocommerce/single-product/meta.php:77
+#: woocommerce/single-product/meta.php:81
+msgid "Tag:"
+msgid_plural "Tags:"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: review, 2: review plural.
+#: woocommerce/single-product/rating.php:44
+msgid "%s review"
+msgid_plural "%s reviews"
+msgstr[0] ""
+msgstr[1] ""
+
+#: woocommerce/single-product/related.php:28
+msgid "Related products"
+msgstr ""
+
+#: woocommerce/single-product/up-sells.php:27
+msgid "You may also like&hellip;"
+msgstr ""
